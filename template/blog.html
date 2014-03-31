@@ -8,9 +8,9 @@
     <!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>zParalexy Free Html5 Responsive Template</title>
-	<meta name="description" content="Free Html5 Templates and Free Responsive Themes Designed by Kimmy | zerotheme.com">
-	<meta name="author" content="www.zerotheme.com">
+	<title>PHP Reboot</title>
+	<meta name="description" content="Share latest PHP news and features">
+	<meta name="author" content="www.phpreboot.com">
 	
     <!-- Mobile Specific Metas
   ================================================== -->
@@ -37,31 +37,17 @@
 	
 	<link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
 	<script src="js/jquery.min.js"></script>
-	<script src="js/responsiveslides.js"></script>
-	<script>
-		$(function () {
-		  $("#slider").responsiveSlides({
-			auto: true,
-			pager: false,
-			nav: true,
-			speed: 500,
-			maxwidth: 962,
-			namespace: "centered-btns"
-		  });
-		});
-	</script>
-	
 </head>
 <body>
-<!--------------Header--------------->
+<!--  Header  -->
 <header>
 	<div class="wrap-header zerogrid">
-		<div id="logo"><a href="#"><img src="./images/logo.png"/></a></div>
+		<div id="logo"><a href="index.html"><img src="./images/logo.png"/></a></div>
 		
-		<div id="search">
+		<!--div id="search">
 			<div class="button-search"></div>
 			<input type="text" value="Search..." onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
-		</div>
+		</div-->
 	</div>
 </header>
 
@@ -69,9 +55,9 @@
 	<div class="wrap-nav zerogrid">
 		<div class="menu">
 			<ul>
-				<li class="first"><a href="index.html">Home</a></li>
-				<li class="current"><a href="blog.html">Blog</a></li>
-				<li><a href="services.html">Services</a></li>
+				<li class="first current"><a href="index.html">Home</a></li>
+				<li><a href="blog.html">Blog/Articles</a></li>
+				<li><a href="services.html">Magazine</a></li>
 				<li><a href="single.html">About</a></li>
 				<li class="last"><a href="contact.html">Contact</a></li>
 			</ul>
@@ -82,24 +68,22 @@
 			<select onchange="location=this.value">
 				<option></option>
 				<option value="index.html">Home</option>
-				<option value="blog.html">Blog</option>
-				<option value="services.html">Services</option>
+				<option value="blog.html">Blog/Articles</option>
+				<option value="services.html">Magazine</option>
 				<option value="single.html">About</option>
 				<option value="contact.html">Contact</option>
 			</select>
 		</div>		
 		<div class="share">
 			<ul>
-				<li><a href="#"><img src="images/rss-icon.png" title="RSS"/></a></li>
-				<li><a href="#"><img src="images/twitter-icon.png" title="Twitter"/></a></li>
-				<li><a href="#"><img src="images/facebook-icon.png" title="Facebook"/></a></li>
-				<li><a href="#"><img src="images/google-plus-icon.png" title="Google Plus"/></a></li>
-				<li><a href="#"><img src="images/pinterest-icon.png" title="Pinterest"/></a></li>
-				<li><a href="#"><img src="images/linkedin-icon.png" title="Linkedin"/></a></li>
+				<li><a href="https://twitter.com/phpreboot"><img src="images/twitter-icon.png" title="Twitter"/></a></li>
+				<!--li><a href="#"><img src="images/facebook-icon.png" title="Facebook"/></a></li>
+				<li><a href="#"><img src="images/linkedin-icon.png" title="Linkedin"/></a></li-->
 			</ul>
 		</div>
 	</div>
 </nav>
+
 
 <!--------------Content--------------->
 <section id="content">
