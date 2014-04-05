@@ -16,8 +16,8 @@
                 <li class="first current"><a href="<?PHP echo $config['site_url']; ?>">Home</a></li>
                 <!--li><a href="blog.html">Blog/Articles</a></li-->
                 <li><a href="<?PHP echo $config['site_url']; ?>/magazine.php">Magazine</a></li>
-                <li><a href="<?PHP echo $config['site_url']; ?>/about.php">About</a></li>
-                <li class="last"><a href="<?PHP echo $config['site_url']; ?>/contact.php">Contact</a></li>
+                <!--li><a href="<?PHP echo $config['site_url']; ?>/about.php">About</a></li>
+                <li class="last"><a href="<?PHP echo $config['site_url']; ?>/contact.php">Contact</a></li-->
             </ul>
         </div>
         

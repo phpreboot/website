@@ -168,3 +168,5 @@ footer {background-color:#333;}
 	background: -webkit-linear-gradient(top, #ddd, #aaa);	background: -moz-linear-gradient(top, #ddd, #aaa);
 	background: -ms-linear-gradient(top, #ddd, #aaa);	background: -o-linear-gradient(top, #ddd, #aaa);
 	background: linear-gradient(top, #ddd, #aaa);	border: 2px solid #999;}
+
+.justify {text-align: justify;}
