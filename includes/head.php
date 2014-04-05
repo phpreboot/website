@@ -39,3 +39,4 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
+<?PHP require_once($config['include_path'] . 'analytics.php');
