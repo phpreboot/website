@@ -4,59 +4,130 @@ require_once('../includes/config.php');
 require_once($config['include_path'] . 'head.php');
 require_once($config['include_path'] . 'header.php');
 ?>
-<section id="content">
-    <div class="wrap-content zerogrid">
-        <div class="row block01">
-            <div class="col-full">
-                <div class="wrap-col">
-                    <h2>Welcome to PHP Reboot</h2>
-                    <p>
-                        PHP Reboot is an attempt to share news and new features of PHP and related technologies.
-                        <br/>
-                        We do this by sharing articles, news and tutorials through free PHP Reboot Magazine and blogs. As community,
-                        we depends on individual. If you have something to share with community, please write an article or blog
-                        and share with us.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row block02">
-            <div class="col-1-3">
-                <div class="wrap-col box1">
-                    <img src="images/icon1.png" />
-                    <h2>PHP Reboot</h2><h3>April 2014</h3>
-                    <p>
-                        April 2014 issue of PHP reboot magazine is now available for download.
-                        <br/>
-                        Please visit <a href="magazine.html">Magazine</a> section to download yout copy.
-                    </p>
-                    <a href="#">[ More ]</a>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="wrap-col box2">
-                    <img src="images/icon2.png" />
-                    <h2>Write for us</h2>
-                    <p>
-                        PHP Reboot is a community effort and we need community to take it to next level. If you have something to share with
-                        community, please write and article or blog post for us.
-                    </p>
-                    <a href="#">[ More ]</a>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="wrap-col box3">
-                    <img src="images/icon3.png" />
-                    <h2>Code Jugalbandi</h2>
-                    <p>
-                        Lots of frameworks in PHP and learning them might not be easy for everyone. Code Jugalbandi is there to make it little
-                        easy. Here we will implement same project in different frameworks.
-                    </p>
-                    <a href="#">[ More ]</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<?PHP
-require_once($config['include_path'] . 'footer.php');
+    <div id="main_content">
+        <?PHP require_once($config['include_path'] . 'slideshow.php'); ?>
+        <?PHP require_once($config['include_path'] . 'whatwedo.php'); ?>
+        <?PHP require_once($config['include_path'] . 'latestmagazine.php'); ?>
+    
+        <div id="bottom_content">
+    
+            <div id="testimonials">
+        
+                <h3>TESTIMONIALS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo
+                aliquam metus, sed iaculis nibh tempus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia Curae; Etiam nec nisi in nisl euismod fringilla.
+                <br />
+                <br />
+                <span class="testimonial_name">John Travis, CEO, DomainName.com</span></p>
+        
+            </div> <!-- END #testimonials -->
+    
+            <div id="clients">
+                
+                <h3>OUR CLIENTS</h3>
+        
+                <ul>
+                    <li><img src="images/client01.jpg" alt="Cox Communications" /></li>
+                    <li><img src="images/client02.jpg" alt="CNN" /></li>
+                    <li><img src="images/client03.jpg" alt="Apartment Finder" /></li>
+                    <li><img src="images/client04.jpg" alt="John Deere" /></li>
+                    <li><img src="images/client05.jpg" alt="Banana Boat" /></li>
+                    <li><img src="images/client06.jpg" alt="Fuji Film" /></li>
+                </ul>
+        
+            </div> <!-- END #clients -->
+    
+        </div> <!-- END #bottom_content -->
+    
+        <div id="download">
+        
+            <p>This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal
+            or client works. So ahead and download this wonderful PSD template!</p>
+            <a href="#">DOWNLOAD PSD</a>
+        
+        </div> <!-- END #download -->
+        
+    </div> <!-- END #main_content -->
+    
+    <div id="footer">
+        
+        <div class="container">
+            
+            <div id="footer_about" class="footer_info">
+                
+                <h4>about us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at
+                ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. </p>
+                
+            </div> <!-- END #footer_about -->
+            
+            <div id="footer_explore" class="footer_info">
+                
+                <h4>explore</h4>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                    <li><a href="#">blog</a></li>
+                </ul>
+                
+            </div> <!-- END #footer_about -->
+            
+            <div id="footer_browse" class="footer_info">
+                
+                <h4>browse</h4>
+                <ul>
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">press &amp; media</a></li>
+                    <li><a href="contact.html">contact us</a></li>
+                    <li><a href="#">terms of service</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+                
+            </div> <!-- END #footer_about -->
+            
+            <div id="footer_contact" class="footer_info">
+                
+                <h4>contact us</h4>
+                <p><span class="bold_text">BisLite Inc.</span>
+                <br />
+                Always Street 265
+                <br />
+                0X - 125 - Canada
+                <br />
+                <br />
+                Phone: 987-6543-210
+                <br />
+                Fax: 987-6543-210</p>
+                
+            </div> <!-- END #footer_about -->
+            
+            <div id="footer_connect" class="footer_info">
+                
+                <h4>connect with us</h4>
+                
+                <ul>
+                    <li><a href="#" id="facebook" title="Facebook">Facebook</a></li>
+                    <li><a href="#" id="dribbble" title="Dribbble">Dribbble</a></li>
+                    <li><a href="#" id="pinterest" title="Pinterest">Pinterest</a></li>
+                    <li><a href="#" id="linkedin" title="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" id="skype" title="Skype">Skype</a></li>
+                    <li><a href="#" id="sharethis" title="Share This">ShareThis</a></li>
+                </ul>
+                
+            </div> <!-- END #footer_about -->
+            
+            <p id="copyright">&copy; Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com.
+            <br />
+            Client Logos are copyright and trademark of the respective owners / companies.</p>
+            
+            <a href="index.html" id="footer_logo">BisLite</a>
+        
+        </div> <!-- END .container -->
+        
+    </div> <!-- END #footer -->
+    
+</body>
+</html>
