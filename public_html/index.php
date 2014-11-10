@@ -10,23 +10,56 @@ require_once($config['include_path'] . 'header.php');
         <?PHP require_once($config['include_path'] . 'latestmagazine.php'); ?>
     
         <div id="bottom_content">
-    
-            <div id="testimonials">
-        
-                <h3>TESTIMONIALS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo
+            <div id="twitter_feed">
+                <!--h3>TESTIMONIALS</h3-->
+                <a class="twitter-timeline"
+                    href="https://twitter.com/phpreboot"
+                    data-widget-id="439522484484718593"
+                    width="470">Tweets by @phpreboot</a>
+                <script>!
+                    function(d,s,id){
+                        var js,
+                            fjs=d.getElementsByTagName(s)[0],
+                            p=/^http:/.test(d.location)?'http':'https';
+                        if(!d.getElementById(id)){
+                            js=d.createElement(s);
+                            js.id=id;
+                            js.src=p+"://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js,fjs);
+                        }
+                    }(document,"script","twitter-wjs");
+                </script>
+                <!--p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo
                 aliquam metus, sed iaculis nibh tempus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci
                 luctus et ultrices posuere cubilia Curae; Etiam nec nisi in nisl euismod fringilla.
                 <br />
                 <br />
-                <span class="testimonial_name">John Travis, CEO, DomainName.com</span></p>
-        
+                <span class="twitter_feed_name">John Travis, CEO, DomainName.com</span></p-->
             </div> <!-- END #testimonials -->
-    
-            <div id="clients">
-                
+            <div id="twitter_feed_right">
+                <!--h3>TESTIMONIALS</h3-->
+                <a class="twitter-timeline"
+                    href="https://twitter.com/phpreboot/lists/phpers-to-follow"
+                    data-widget-id="531795927338471424"
+                    width="470">
+                    Tweets from lists by PHP Reboot
+                </a>
+                <script>!
+                    function(d,s,id){
+                        var js,
+                            fjs=d.getElementsByTagName(s)[0],
+                            p=/^http:/.test(d.location)?'http':'https';
+                        if(!d.getElementById(id)){
+                            js=d.createElement(s);
+                            js.id=id;
+                            js.src=p+"://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js,fjs);
+                        }
+                    }(document,"script","twitter-wjs");
+                </script>
+            </div>
+            <!--div id="clients">
                 <h3>OUR CLIENTS</h3>
-        
                 <ul>
                     <li><img src="images/client01.jpg" alt="Cox Communications" /></li>
                     <li><img src="images/client02.jpg" alt="CNN" /></li>
@@ -35,19 +68,14 @@ require_once($config['include_path'] . 'header.php');
                     <li><img src="images/client05.jpg" alt="Banana Boat" /></li>
                     <li><img src="images/client06.jpg" alt="Fuji Film" /></li>
                 </ul>
-        
-            </div> <!-- END #clients -->
-    
+            </div--> <!-- END #clients -->
         </div> <!-- END #bottom_content -->
-    
+
         <div id="download">
-        
             <p>This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal
             or client works. So ahead and download this wonderful PSD template!</p>
             <a href="#">DOWNLOAD PSD</a>
-        
         </div> <!-- END #download -->
-        
     </div> <!-- END #main_content -->
     
     <div id="footer">

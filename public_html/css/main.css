@@ -340,55 +340,19 @@ h1#logo {
 /* ----- Carousel and Portfolio Styling ----- */
 
 
-#testimonials {
+#twitter_feed {
     clear: left;
     float: left;
-    width: 430px;
+    padding: 10px;
 }
 
-#testimonials h3 {
-    background: url(../images/speechcloud_icon.png) no-repeat left;
-    font-size: 15px;
-    font-weight: bold;
-    height: 18px;
-    margin: 19px 0 15px 0;
-    padding: 5px 0 0 38px;
-}
-
-#testimonials p {
-    color: #363636;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-.testimonial_name {
-    font-style: italic;
-    font-weight: bold;
-}
-
-#clients {
+#twitter_feed_right {
     float: right;
-    margin-bottom: 40px;
+    padding: 10px;
 }
 
-#clients h3 {
-    background: url(../images/people_icon.png) no-repeat left;
-    font-size: 15px;
-    font-weight: bold;
-    height: 16px;
-    margin: 19px 0 15px 0;
-    padding: 4px 0 0 38px;
-}
-
-#clients ul {
-    background: #e8ebf1;
-    height: 200px;
-    width: 480px;
-}
-
-#clients img {
-    float: left;
-    margin: 1px;
+#twitter_feed a, #twitter_feed_right a {
+    color: #2AACC8;
 }
 
 #download {
