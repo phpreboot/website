@@ -713,12 +713,8 @@ p#copyright {
 }
 
 #footer_logo {
-    background: url(../images/logo.png) no-repeat;
     display: block;
     float: right;
-    height: 37px;
-    text-indent: -9999px;
-    width: 148px;
 }
 
 /* ----- Footer Styling ----- */
