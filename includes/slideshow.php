@@ -2,15 +2,15 @@
             <div class="container">
                 <div id="slideshow_container">
                     <ul>
-                        <li><img src="images/banner_image.jpg" alt="banner1" /></li>
+                        <li><img src="images/phpreboot1410.png" alt="banner1" /></li>
                     </ul>
                     <div id="slideshow_pagination">
                         <ul>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <!--li><a href="#"></a></li>
+                            <li><a href="#"></a></li-->
                             <li><a href="#" class="current"></a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#"></a></li>
+                            <!--li><a href="#"></a></li>
+                            <li><a href="#"></a></li-->
                         </ul>
                     </div> <!-- END #slideshow_pagination -->
                 </div> <!-- END #slideshow_container -->

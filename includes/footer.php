@@ -17,24 +17,22 @@
                 
                 <h4>explore</h4>
                 <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="#">about us</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="portfolio.html">portfolio</a></li>
-                    <li><a href="#">blog</a></li>
+                    <li><a href="<?= $config['site_url'] ?>">home</a></li>
+                    <li><a href="<?= $config['site_url'] ?>/about.php">about us</a></li>
+                    <li><a href="<?= $config['site_url'] ?>/blog.php">blog</a></li>
+                    <li><a href="<?= $config['site_url'] ?>/meetup.php">meetup</a></li>
+                    <li><a href="<?= $config['site_url'] ?>/contact.php">contact</a></li>
                 </ul>
                 
             </div> <!-- END #footer_about -->
             
             <div id="footer_browse" class="footer_info">
                 
-                <h4>browse</h4>
+                <h4>Magazines</h4>
                 <ul>
-                    <li><a href="#">careers</a></li>
-                    <li><a href="#">press &amp; media</a></li>
-                    <li><a href="contact.html">contact us</a></li>
-                    <li><a href="#">terms of service</a></li>
-                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="<?= $config['site_url'] ?>/magazine/november14.php">November 14</a></li>
+                    <li><a href="<?= $config['site_url'] ?>/magazine/october14.php">October 14</a></li>
+                    <li><a href="<?= $config['site_url'] ?>/magazine/april14.php">April 14</a></li>
                 </ul>
                 
             </div> <!-- END #footer_about -->
@@ -42,16 +40,9 @@
             <div id="footer_contact" class="footer_info">
                 
                 <h4>contact us</h4>
-                <p><span class="bold_text">BisLite Inc.</span>
+                <p><span class="bold_text">PHP reboot</span>
                 <br />
-                Always Street 265
-                <br />
-                0X - 125 - Canada
-                <br />
-                <br />
-                Phone: 987-6543-210
-                <br />
-                Fax: 987-6543-210</p>
+                phpreboot@gmail.com</p>
                 
             </div> <!-- END #footer_about -->
             
@@ -60,12 +51,12 @@
                 <h4>connect with us</h4>
                 
                 <ul>
-                    <li><a href="#" id="facebook" title="Facebook">Facebook</a></li>
+                    <!--li><a href="#" id="facebook" title="Facebook">Facebook</a></li>
                     <li><a href="#" id="dribbble" title="Dribbble">Dribbble</a></li>
                     <li><a href="#" id="pinterest" title="Pinterest">Pinterest</a></li>
                     <li><a href="#" id="linkedin" title="LinkedIn">LinkedIn</a></li>
                     <li><a href="#" id="skype" title="Skype">Skype</a></li>
-                    <li><a href="#" id="sharethis" title="Share This">ShareThis</a></li>
+                    <li><a href="#" id="sharethis" title="Share This">ShareThis</a></li-->
                 </ul>
                 
             </div> <!-- END #footer_about -->
