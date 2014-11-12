@@ -30,9 +30,7 @@
                 
                 <h4>Magazines</h4>
                 <ul>
-                    <li><a href="<?= $config['site_url'] ?>/magazine/november14.php">November 14</a></li>
                     <li><a href="<?= $config['site_url'] ?>/magazine/october14.php">October 14</a></li>
-                    <li><a href="<?= $config['site_url'] ?>/magazine/april14.php">April 14</a></li>
                 </ul>
                 
             </div> <!-- END #footer_about -->

@@ -2,7 +2,7 @@
             <div class="container">
                 <div id="slideshow_container">
                     <ul>
-                        <li><img src="images/phpreboot1410.png" alt="banner1" /></li>
+                        <li><img src="<?= $config['site_url'] ?>/images/phpreboot1410.png" alt="banner1" /></li>
                     </ul>
                     <div id="slideshow_pagination">
                         <ul>
