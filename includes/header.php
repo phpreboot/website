@@ -4,7 +4,7 @@
             <h1 id="logo"><a href="<?= $config['site_url'] ?>"><img src="<?= $config['image_url']; ?>/logo.png"></a></h1>
             <div id="main_menu">
                 <ul>
-                    <li class="first_list"><a href="<?= $config['site_url'] ?>" class="main_menu_first main_current">home</a></li>
+                    <li class="first_list"><a href="<?= $config['site_url'] ?>" class="main_menu_first <?PHP if(isset($page) && $page=='home') echo 'main_current'; ?>">home</a></li>
                     <li class="first_list"><a href="<?= $config['site_url'] ?>/about.php" class="main_menu_first">about us</a></li>
                     <li class="first_list with_dropdown">
                         <a href="<?= $config['site_url'] ?>/whatwedo.php" class="main_menu_first">What we do</a>

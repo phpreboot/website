@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>BisLite - Home</title>
+    <title><?= $title?:'PHP Reboot'; ?></title>
     <link rel="stylesheet" type="text/css" href="<?= $config['css_url'] ?>/reset.css" />
     <link rel="stylesheet" type="text/css" href="<?= $config['css_url'] ?>/main.css" />
 </head>
