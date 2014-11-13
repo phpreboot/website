@@ -53,11 +53,11 @@ require_once($config['include_path'] . 'header.php');
                 <div class="content_block_col2 content_block_margin">
                     <p><strong>Articles (Total 50)</strong></p>
                     <ul style="margin-top:10px;">
-                        <li><a href="http://www.sitepoint.com/5-easy-ways-getting-started-php-vagrant/" rel="nofollow">5-easy-ways-getting-started-php-vagrant</a> by Aldo Ziflaj on sitepoint.com</li>
-                        <li><a href="http://blog.kapilsharma.info/reading-reading-and-reading/">Reading, reading and reading .....</a> by Kapil Sharma</li>
-                        <li><a href="http://afilina.com/reduce-number-of-queries/" rel="nofollow">Reduce number of queries</a> by Anna Filina</li>
-                        <li><a href="http://laravel-news.com/2014/10/setting-laravel-elixr-bootstrap/" rel="nofollow">Setting up Laravel elixr with Bootstrap</a> by Eric Barnes</li>
-                        <li><a href="http://blog.ircmaxell.com/2014/10/youre-doing-agile-wrong.html" rel="nofollow">You're Doing Agile Wrong</a> by Anthony Ferrara.</li>
+                        <li><a href="http://www.sitepoint.com/5-easy-ways-getting-started-php-vagrant/" rel="nofollow" target="_blank">5-easy-ways-getting-started-php-vagrant</a> by Aldo Ziflaj on sitepoint.com</li>
+                        <li><a href="http://blog.kapilsharma.info/reading-reading-and-reading/" target="_blank">Reading, reading and reading .....</a> by Kapil Sharma</li>
+                        <li><a href="http://afilina.com/reduce-number-of-queries/" rel="nofollow" target="_blank">Reduce number of queries</a> by Anna Filina</li>
+                        <li><a href="http://laravel-news.com/2014/10/setting-laravel-elixr-bootstrap/" rel="nofollow" target="_blank">Setting up Laravel elixr with Bootstrap</a> by Eric Barnes</li>
+                        <li><a href="http://blog.ircmaxell.com/2014/10/youre-doing-agile-wrong.html" rel="nofollow" target="_blank">You're Doing Agile Wrong</a> by Anthony Ferrara.</li>
                     </ul>
                     <br/>
                     <p>and 45 more. <a href="<?= $config['site_url'] ?>/magazine/october14.php">Read more</a></p>

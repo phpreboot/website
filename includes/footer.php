@@ -18,10 +18,9 @@
                 <h4>explore</h4>
                 <ul>
                     <li><a href="<?= $config['site_url'] ?>">home</a></li>
-                    <li><a href="<?= $config['site_url'] ?>/about.php">about us</a></li>
-                    <li><a href="<?= $config['site_url'] ?>/blog.php">blog</a></li>
+                    <!--li><a href="<?= $config['site_url'] ?>/blog.php">blog</a></li-->
                     <li><a href="<?= $config['site_url'] ?>/meetup.php">meetup</a></li>
-                    <li><a href="<?= $config['site_url'] ?>/contact.php">contact</a></li>
+                    <!--li><a href="<?= $config['site_url'] ?>/contact.php">contact</a></li-->
                 </ul>
                 
             </div> <!-- END #footer_about -->
