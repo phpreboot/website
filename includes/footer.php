@@ -73,6 +73,10 @@
         </div> <!-- END .container -->
         
     </div> <!-- END #footer -->
-    
+    <?PHP
+        if (isset($config['environment']) && $config['environment'] == 'production') {
+            include_once($config['include_path'] . 'analytics.php');
+        }
+    ?>
 </body>
 </html>
