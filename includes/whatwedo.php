@@ -26,14 +26,14 @@
                     <p>
                         PHP Reboot is a community effort and our contributers also write blogs, articles and tutorials on new technologies. They are available even if you are not having access to our Flip board magazine.
                     </p>
-                    <a href="<?= $config['site_url'] ?>/blog.php"><img src="images/arrow_right.png" alt="arrow right" />Go through blogs</a>
+                    <!--a href="<?= $config['site_url'] ?>/blog.php"><img src="images/arrow_right.png" alt="arrow right" />Go through blogs</a-->
                 </div>
                 <div class="mid_content_info">
                     <h2 id="ready">Open source</h2>
                     <p>
                         PHP Reboot also contribute and promote contributions to open source. We are working on Code jugalbandi as our open source project which we suppose help everyone to learn new frameworks easily.
                     </p>
-                    <a href="<?= $config['site_url'] ?>/opensoure.php"><img src="images/arrow_right.png" alt="arrow right" />Clone code</a>
+                    <!--a href="<?= $config['site_url'] ?>/opensoure.php"><img src="images/arrow_right.png" alt="arrow right" />Clone code</a-->
                 </div>
             </div> <!-- END .container -->
         </div> <!-- END #mid_content -->
