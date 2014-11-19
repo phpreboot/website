@@ -16,7 +16,7 @@ require_once($config['include_path'] . 'header.php');
                             <p class="blue-box-heading">Next Meetup</p>
                             <p class="blue-box-heading">Working with Git</p>
                             <p>
-                                Saturday, December 13th, 2014 <br/>
+                                Saturday, December 20th, 2014 <br/>
                                 11:00 a.m. to 2:00 p.m.
                             </p>
                             <p>
@@ -41,7 +41,7 @@ require_once($config['include_path'] . 'header.php');
                             </p>
                             <p>
                                 <strong>Workshop: (13:15-14:00)</strong><br/><br/>
-                                Once of the common feedback we found during meetups is, most meetup cover theory. So to give some practical experience of Git, there will be short workshop (45 minutes) where we will practice the commands we covered during sessions. For this, everyone will create their own git-hub account and a sample project. We will use proper Git workflow to practice managing dummy source code.<br/><br/>
+                                Once of the common feedback we found during meetups is, most meetup cover theory. To give some practical experience of Git, there will be short workshop (45 minutes) where we will practice the commands we covered during sessions. For this, everyone will create their own git-hub account and a sample project. We will use proper Git workflow to practice managing dummy source code.<br/><br/>
                                 <strong>Prerequisite for Git Workshop:</strong><br/>
                                 • Laptop with Windows 7/8 or Linux (Any distribution but not too old) or Mac OS X+.<br/>
                                 • Laptop must be fully charged as we might not arrange lot of Power plugs.<br/>
