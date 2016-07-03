@@ -14,12 +14,12 @@ cd ..
 
 
 PHP code sniffer
-vendor/bin/phpcs --standard=reports/phprcs.xml  app/Http > reports/codesniffer/phpcs.txt
-vendor/bin/phpcs --report=source --standard=reports/phprcs.xml -s app/Http > reports/codesniffer/phpcssummary.txt
-vendor/bin/phpcs --standard=reports/phprcs.xml -s app/Http > reports/codesniffer/phpcssummary2.txt
+vendor/bin/phpcs --standard=phprcs.xml  app/Http > reports/codesniffer/phpcs.txt
+vendor/bin/phpcs --report=source --standard=phprcs.xml -s app/Http > reports/codesniffer/phpcssummary.txt
+vendor/bin/phpcs --standard=phprcs.xml -s app/Http > reports/codesniffer/phpcssummary2.txt
 
 PHP Mess detector
-vendor/bin/phpmd app/Http text reports/phprmd.xml > reports/phpmd/phpmd.txt
+vendor/bin/phpmd app/Http text phprmd.xml > reports/phpmd/phpmd.txt
 
 PHP Copy-paste detector
 vendor/bin/phpcpd app > reports/copypaste/phpcpd.txt
