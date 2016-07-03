@@ -1,0 +1,32 @@
+composer
+"require-dev": {     "phpspec/phpspec": "~2.1",     "phpmd/phpmd": "~2.4",     "squizlabs/php_codesniffer": "~2.6",     "pdepend/pdepend" : "2.2.4",     "sebastian/phpcpd": "*",     "phpmetrics/phpmetrics": "*" },
+
+mkdir reports
+mkdir reports
+cd reports
+mkdir codesniffer
+mkdir phpmd
+mkdir copypaste
+mkdir phpdepend
+mkdir phpmetrics
+cd ..
+
+
+
+PHP code sniffer
+vendor/bin/phpcs --standard=phprcs.xml  app/Http > reports/codesniffer/phpcs.txt
+vendor/bin/phpcs --report=source --standard=phprcs.xml -s app/Http > reports/codesniffer/phpcssummary.txt
+vendor/bin/phpcs --standard=phprcs.xml -s app/Http > reports/codesniffer/phpcssummary2.txt
+
+PHP Mess detector
+vendor/bin/phpmd app/Http text phprmd.xml > reports/phpmd/phpmd.txt
+
+PHP Copy-paste detector
+vendor/bin/phpcpd app > reports/copypaste/phpcpd.txt
+
+PHP Depend
+vendor/bin/pdepend --summary-xml=reports/phpdepend/pdepend.xml --jdepend=reports/phpdepend/jdepend.svg --overview-pyramid=reports/phpdepend/pyramid.svg app
+
+PHP Metrics
+vendor/bin/phpmetrics --report-html=reports/phpmetrics/phpmetrics.html --report-xml=reports/phpmetrics/phpmetrics.xml --violations-xml=reports/phpmetrics/violations.xml app/Http
+
