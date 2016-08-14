@@ -27,29 +27,37 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="hold-transition skin-green sidebar-mini">
+<body class="hold-transition skin-green sidebar-mini sidebar-collapse">
     <div class="wrapper">
         @include('layouts.Admin-LTE-2-3-4.sections.header')
         @include('layouts.Admin-LTE-2-3-4.sections.menu')
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            @section('sidebar')
-                <!-- Content Header (Page header) -->
-                <section class="content-header">
-                    <h1>
-                        {{ $contentTitle or 'PHP Reboot' }}
-                        <small>{{ $contentTitleSmall or '' }}</small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                        <li class="active">Dashboard</li>
-                    </ol>
-                </section>
-            @show
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    {{ $contentTitle or 'PHP Reboot' }}
+                    <small>{{ $contentTitleSmall or '' }}</small>
+                </h1>
+                @section('breadcrumb')
+                <ol class="breadcrumb">
+                    <li><i class="fa fa-home"></i> Home</li>
+                </ol>
+                @show
+            </section>
             <section class="content">
                 @yield('content')
             </section>
         </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 0.1.0
+            </div>
+            <strong>Copyright &copy; 2014-2016 PHP Reboot.</strong> All rights
+            reserved.<br>
+            Blog post in magazine is just for knowledge sharing. They are copyright property of original site/authors.
+        </footer>
     </div>
 
     <!-- Footer scripts. Need to check how to make it dynamic. -->

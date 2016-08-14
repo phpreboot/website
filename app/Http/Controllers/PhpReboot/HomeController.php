@@ -14,6 +14,6 @@ class HomeController extends Controller
      */
     public function homePage()
     {
-        return view('PhpReboot.Home.homePage', []);
+        return view('PhpReboot.Home.homePage', ['menu' => 'home']);
     }
 }
