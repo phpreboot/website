@@ -3,4 +3,7 @@
 Homestead.yaml
 Homestead.json
 .env
-/reports
+/reports/codesniffer
+/reports/copypaste
+/reports/phpmd
+/reports/phpmetrics
