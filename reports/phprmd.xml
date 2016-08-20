@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="EE Mess Detector"
+         xmlns="http://pmd.sf.net/ruleset/1.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sf.net/ruleset/1.0.0 http://pmd.sf.net/ruleset_xml_schema.xsd"
+         xsi:noNamespaceSchemaLocation="http://pmd.sf.net/ruleset_xml_schema.xsd">
+    <description>Mess detector rulesets for Eastern Enterprise.
+    </description>
+    <rule ref="rulesets/codesize.xml/CyclomaticComplexity">
+        <properties>
+            <property name="showClassesComplexity" value="false"/>
+            <property name="showMethodsComplexity" value="false"/>
+        </properties>
+    </rule>
+    <rule ref="rulesets/codesize.xml/NPathComplexity"/>
+    <rule ref="rulesets/codesize.xml/ExcessiveMethodLength">
+        <properties>
+            <property name="minimum" value="50"/>
+        </properties>
+    </rule>
+    <rule ref="rulesets/codesize.xml/ExcessiveClassLength"/>
+    <rule ref="rulesets/codesize.xml/ExcessiveParameterList">
+        <properties>
+            <property name="minimum" value="8"/>
+        </properties>
+    </rule>
+    <rule ref="rulesets/codesize.xml/ExcessivePublicCount"/>
+    <rule ref="rulesets/codesize.xml/TooManyFields"/>
+    <rule ref="rulesets/codesize.xml/TooManyMethods"/>
+    <rule ref="rulesets/codesize.xml/ExcessiveClassComplexity"/>
+    <rule ref="rulesets/controversial.xml/Superglobals"/>
+    <rule ref="rulesets/design.xml"/>
+    <rule ref="rulesets/naming.xml/ShortVariable"/>
+    <rule ref="rulesets/naming.xml/LongVariable"/>
+    <rule ref="rulesets/naming.xml/ShortMethodName"/>
+    <rule ref="rulesets/naming.xml/BooleanGetMethodName"/>
+    <rule ref="rulesets/unusedcode.xml"/>
+</ruleset>
