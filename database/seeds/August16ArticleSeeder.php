@@ -30,7 +30,7 @@ class August16ArticleSeeder extends Seeder
     ];
 
     /**
-     * There are 4 websites to be added. key=>value are author->website
+     * There are 4 websites to be added.
      */
     private $websites = [
         [
@@ -150,6 +150,9 @@ class August16ArticleSeeder extends Seeder
             $articleModel->description = $article['description'];
             $articleModel->created_at = Carbon::now()->format('Y-m-d H:i:s');
             $articleModel->save();
+
+            $magazine->no_of_articles++;
+            $magazine->save();
         }
     }
 

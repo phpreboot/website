@@ -144,6 +144,8 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\MagazineRepositoryServiceProvider::class,
+        App\Providers\MagazineServiceServiceProvider::class,
 
     ],
 
