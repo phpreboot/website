@@ -20,6 +20,7 @@ class CategoryTableSeeder extends Seeder
         'Laravel' => 'Articles related to Laravel framework',
         'Library' => 'Article about some common third-party library',
         'Magento' => 'Articles related to Magento',
+        'Phalcon' => 'Articles related to Phalcon framework',
         'PHP-General' => 'Article important about PHP but are not related to any framework or other defined category',
         'Security' => 'Articles related to web application security',
         'Silex' => 'Articles related to Silex framework',

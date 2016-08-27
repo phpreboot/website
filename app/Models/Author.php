@@ -19,6 +19,6 @@ class Author extends Model
      */
     public function websites()
     {
-        return $this->belongsToMany('App\Author');
+        return $this->belongsToMany('App\Models\Website');
     }
 }
