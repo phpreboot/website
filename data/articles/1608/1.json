@@ -1,0 +1,16 @@
+{
+  "author": {
+    "name":"Samuel Oloruntoba"
+  },
+  "website": {
+    "name":"Scotch IO",
+    "site_url":"https://scotch.io",
+    "feed_url":""
+  },
+  "category": "Laravel",
+  "tags": [],
+  "url":"https://scotch.io/tutorials/easy-and-fast-emails-with-laravel-5-3-mailables",
+  "title":"Easy and Fast Emails with Laravel 5.3 Mailables",
+  "published_at":"2016-08-25",
+  "description":"In a new blog post on Scotch.io, Samuel Oloruntoba described using Laravel 5.3 Mailable."
+}
