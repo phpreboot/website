@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\PhpReboot;
 
-//use App\User;
 use App\Http\Controllers\Controller;
 
 class MeetupController extends Controller

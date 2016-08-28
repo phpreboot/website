@@ -11,7 +11,7 @@ class Article extends Model
      */
     public function magazine()
     {
-        return $this->belongsTo('App\Model\Magazine');
+        return $this->belongsTo('App\Models\Magazine');
     }
 
     /**
@@ -19,7 +19,7 @@ class Article extends Model
      */
     public function category()
     {
-        return $this->belongsTo('App\Model\Category');
+        return $this->belongsTo('App\Models\Category');
     }
 
     /**
@@ -27,7 +27,7 @@ class Article extends Model
      */
     public function author()
     {
-        return $this->belongsTo('App\Model\Author');
+        return $this->belongsTo('App\Models\Author');
     }
 
     /**
@@ -35,6 +35,6 @@ class Article extends Model
      */
     public function website()
     {
-        return $this->belongsTo('App\Model\Website');
+        return $this->belongsTo('App\Models\Website');
     }
 }

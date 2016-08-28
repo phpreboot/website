@@ -11,20 +11,35 @@ namespace App\Services;
 use App\Repositories\Contract\MagazineRepositoryInterface;
 
 class MagazineService {
-    protected $magzineRepo;
+    protected $magazineRepo;
 
     public function __construct(MagazineRepositoryInterface $magazineRepo)
     {
-        $this->magzineRepo = $magazineRepo;
+        $this->magazineRepo = $magazineRepo;
     }
 
+    public function getMagazineByShortName($shortName)
+    {
+        return $this->magazineRepo->findBy('short_name', $shortName)->first();
+    }
+
+    /**
+     * Returns all the magazine
+     *
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
     public function getAllMagazines()
     {
-        return $this->magzineRepo->find();
+        return $this->magazineRepo->find();
     }
 
+    /**
+     * Returns number of available magazines.
+     *
+     * @return integer Number of available magazines.
+     */
     public function getCount()
     {
-        return $this->magzineRepo->getCount();
+        return $this->magazineRepo->getCount();
     }
 }

@@ -25,6 +25,11 @@ class MagazineRepository implements MagazineRepositoryInterface {
         return $this->magazine->all();
     }
 
+    public function findBy($name, $value)
+    {
+        return $this->magazine->where($name, $value);
+    }
+
     public function getCount()
     {
         return $this->magazine->all()->count();
