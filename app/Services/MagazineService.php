@@ -22,4 +22,9 @@ class MagazineService {
     {
         return $this->magzineRepo->find();
     }
+
+    public function getCount()
+    {
+        return $this->magzineRepo->getCount();
+    }
 }

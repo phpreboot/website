@@ -14,6 +14,27 @@
                     <i class="fa fa-credit-card"></i> <span>Meet-ups</span>
                 </a>
             </li>
+            @if ($totalMagazine >= 1)
+                <li class="treeview @if (isset($menu) && $menu == 'magazine') active @endif">
+                    <a href="#">
+                        <i class="fa fa-book"></i>
+                        <span>Magazine</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        @foreach ($magazines as $magazine)
+                            <li>
+                                <a href="{{ url('magazine', [ strtolower($magazine->short_name) ]) }}">
+                                    <i class="fa fa-tablet"></i>
+                                    {{ $magazine->name }}
+                                </a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </li>
+            @endif
         </ul>
     </section>
     <!-- /.sidebar -->

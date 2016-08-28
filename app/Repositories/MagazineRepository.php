@@ -24,4 +24,9 @@ class MagazineRepository implements MagazineRepositoryInterface {
     {
         return $this->magazine->all();
     }
+
+    public function getCount()
+    {
+        return $this->magazine->all()->count();
+    }
 }

@@ -8,9 +8,17 @@
 
 namespace app\Http\ViewComposers;
 
+use App\Services\MagazineService;
 use Illuminate\Contracts\View\View;
 
 class MenuComposer {
+    protected $magazineService;
+
+    public function __construct(MagazineService $magazineService)
+    {
+        $this->magazineService = $magazineService;
+    }
+
     /**
      * Bind data to the view.
      *
@@ -19,6 +27,8 @@ class MenuComposer {
      */
     public function compose(View $view)
     {
-        $view->with('count', $this->users->count());
+        $magazines = $this->magazineService->getAllMagazines();
+        $view->with('totalMagazine', $magazines->count());
+        $view->with('magazines', $magazines);
     }
 }

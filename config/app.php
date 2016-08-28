@@ -144,8 +144,13 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        /*
+         * PHP reboot custom service providers.
+         */
         App\Providers\MagazineRepositoryServiceProvider::class,
         App\Providers\MagazineServiceServiceProvider::class,
+        App\Providers\ComposerServiceProvider::class,
 
     ],
 
