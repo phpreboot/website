@@ -27,6 +27,7 @@ Route::get('/meetup', [
 | the data required by these pages.
 */
 Route::get('/magazine/{shortName}', 'PhpReboot\Magazine\MagazineController@monthPage');
+Route::get('/magazine/article/{articleId}', 'PhpReboot\Magazine\MagazineController@articleDetails');
 
 /*
 |--------------------------------------------------------------------------

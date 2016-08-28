@@ -24,8 +24,19 @@ class MagazineController extends Controller
             'contentTitleSmall' => $magazine->name . ' issue.',
         ];
 
-        //dd($viewData);
-
         return view('PhpReboot.Magazine.monthPage', $viewData);
+    }
+
+    public function articleDetails($articleId, ArticleService $articleService)
+    {
+        $article = $articleService->getArticle($articleId);
+
+        $viewData = [
+            'article' => $article,
+            'menu' => 'magazine',
+            'contentTitleSmall' => $article->magazine->name . ' issue.',
+        ];
+
+        return view('PhpReboot.Magazine.articleDetails', $viewData);
     }
 }

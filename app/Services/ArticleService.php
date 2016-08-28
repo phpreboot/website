@@ -34,8 +34,14 @@ class ArticleService {
             $categories[$categoryName][] = $article;
         }
 
+        // For now, simply sorting categories alphabetically.
         ksort($categories);
 
         return $categories;
+    }
+
+    public function getArticle($articleId)
+    {
+        return $this->articleRepo->findOne($articleId);
     }
 }

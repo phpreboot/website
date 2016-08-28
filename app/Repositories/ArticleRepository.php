@@ -25,6 +25,11 @@ class ArticleRepository implements ArticleRepositoryInterface
         return $this->article->all();
     }
 
+    public function findOne($id)
+    {
+        return $this->article->find($id);
+    }
+
     public function findBy($name, $value)
     {
         return $this->article->where($name, $value)->get();
