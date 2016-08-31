@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Reza Lavaryan"
+    },
+    "website": {
+        "id": "4",
+        "name": "SitePoint",
+        "site_url": "sitepoint.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "10",
+        "name": "Library",
+        "description": "Article about some common third-party library"
+    },
+    "url": "https:\/\/www.sitepoint.com\/framework-agnostic-php-cronjobs-made-easy-with-crunz",
+    "title": "Framework-Agnostic PHP Cronjobs Made Easy with Crunz!",
+    "published_at": "2016-08-24",
+    "description": "In the latest post on sitepoint, Reza tells us managing cron jobs using Crunz library.",
+    "json_file_name": "201608\/5.json"
+}

@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Dries Vints"
+    },
+    "website": {
+        "name": "Dries Vints",
+        "site_url": "DriesVints.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "9",
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/driesvints.com\/blog\/two-tips-to-speedup-your-laravel-tests",
+    "title": "Two tips to speedup your Laravel tests",
+    "published_at": "2016-08-24",
+    "description": "In the new post on his blog, Dries Vints provided two quick tips to speed up Laravel tests.",
+    "json_file_name": "201608\/3.json"
+}
