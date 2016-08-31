@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Bruno Skvorc"
+    },
+    "website": {
+        "name": "SitePoint",
+        "site_url": "sitepoint.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "12",
+        "name": "Phalcon",
+        "description": "Articles related to Phalcon framework"
+    },
+    "url": "https:\/\/www.sitepoint.com\/up-and-running-with-the-fastest-php-framework-on-php7-in-5-mins",
+    "title": "Up and Running with the Fastest PHP Framework on PHP7 in 5 Mins",
+    "published_at": "2016-08-23",
+    "description": "In the latest post on sitepoint, Bruno help us up and running with phalcon in 5 minutes.",
+    "json_file_name": "201608\/4.json"
+}

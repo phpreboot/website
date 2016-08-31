@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Matthew Setter"
+    },
+    "website": {
+        "name": "Master Zend Framework",
+        "site_url": "masterzendframework.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "22",
+        "name": "Zend Expressive",
+        "description": "Articles related to Zend Expressive framework"
+    },
+    "url": "http:\/\/www.masterzendframework.com\/using-eloquent-with-expressive",
+    "title": "How To Use Laravel\u2019s Eloquent ORM with Zend Expressive",
+    "published_at": "2016-08-22",
+    "description": "In the new post on his blog, Matthew explained how to use Larave\\'s Eloquent ORM on Zend Expressive Framework.",
+    "json_file_name": "201608\/2.json"
+}
