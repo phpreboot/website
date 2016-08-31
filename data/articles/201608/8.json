@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Shahroze Nawaz"
+    },
+    "website": {
+        "name": "Cloudways",
+        "site_url": "cloudways.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "18",
+        "name": "Symfony",
+        "description": "Articles related to Symfony framework"
+    },
+    "url": "https:\/\/www.cloudways.com\/blog\/rest-api-in-symfony-3-1\/",
+    "title": "How to Create Simple Rest API in Symfony 3.1",
+    "published_at": "2016-08-26",
+    "description": "On cloudways blog, Shahroze Nawaz gave a short tutorial of making quick and simple Rest API in Symfony 3.1",
+    "json_file_name": "201608\/8.json"
+}
