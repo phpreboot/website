@@ -19,6 +19,15 @@ Route::get('/meetup', [
     'uses' => 'PhpReboot\MeetupController@index'
 ]);
 
+/*
+|-------------------------------------------------------------------------
+| Dynamic pages of PHP Reboot
+|-------------------------------------------------------------------------
+| Below are the routes that are generated dynamically. We need to cache
+| the data required by these pages.
+*/
+Route::get('/magazine/{shortName}', 'PhpReboot\Magazine\MagazineController@monthPage');
+Route::get('/magazine/article/{articleId}', 'PhpReboot\Magazine\MagazineController@articleDetails');
 
 /*
 |--------------------------------------------------------------------------
