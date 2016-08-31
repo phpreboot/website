@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Phil Sturgeon"
+    },
+    "website": {
+        "name": "Phil Sturgeon",
+        "site_url": "philsturgeon.uk",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "13",
+        "name": "PHP-General",
+        "description": "Article important about PHP but are not related to any framework or other defined category"
+    },
+    "url": "https:\/\/philsturgeon.uk\/php\/2016\/08\/30\/php-fig-3-0-or-rebrand",
+    "title": "PHP-FIG: 3.0 or Rebrand",
+    "published_at": "2016-08-30",
+    "description": "On his blog, Phil expressed his views on current state of PHP-FIG, & FIG 3.0 proposal. Interesting to read to know FIG details.",
+    "json_file_name": "201608\/10.json"
+}

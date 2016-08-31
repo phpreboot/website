@@ -1,0 +1,22 @@
+{
+    "author": {
+        "name": "Bruno Skvorc",
+        "id": "4"
+    },
+    "website": {
+        "id": "4",
+        "name": "SitePoint",
+        "site_url": "sitepoint.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "19",
+        "name": "Tools",
+        "description": "Articles discussing some web development tools"
+    },
+    "url": "https:\/\/www.sitepoint.com\/local-composer-for-everyone-a-conference-friendly-satis-setup\/",
+    "title": "Local Composer for Everyone! A Conference-Friendly Satis Setup",
+    "published_at": "2016-08-27",
+    "description": "On Sitepoint, Bruno Skvorc has a good post about Satis. He explained how we can setup replacement of packagist (Composer's repo) on local system\/network so that composer install\/update can work even without internet.",
+    "json_file_name": "201608\/7.json"
+}
