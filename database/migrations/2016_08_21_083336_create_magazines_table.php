@@ -15,9 +15,9 @@ class CreateMagazinesTable extends Migration
         Schema::create('magazines', function (Blueprint $table) {
             $table->increments('id');
             // Full name like September 2016
-            $table->string('name', 14);
+            $table->string('name', 14)->unique();
             // Short name, 3 char month and 2 char year like 'sep16'
-            $table->char('short_name', 5);
+            $table->char('short_name', 5)->unique();
             // Number of articles in current month.
             // We do not expect more then 265 (unsigned Tinyint) articles in an issue but to be on safer side,
             // taken limit of 65535(unsigned smallint) articles.

@@ -40,7 +40,7 @@
                     <hr/>
                     <strong><i class="fa fa-external-link margin-r-5"></i> Original URL</strong>
                     <p class="text-muted">
-                        <a href="{{ $article->url }}" target="_blank">{{ $article->url }}</a>
+                        <a href="{{ stripslashes($article->url) }}" target="_blank">{{ stripslashes($article->url) }}</a>
                     </p>
                     <hr/>
                     <strong>
@@ -87,7 +87,7 @@
                 <div class="box-body">
                     <p>{{ $article->description }}</p>
                     <p>
-                        <iframe src="{{ $article->url }}" width="100%" height="500px">
+                        <iframe src="{{ stripslashes($article->url) }}" width="100%" height="500px">
                             <p>Your browser does not support iframes.</p>
                         </iframe>
                     </p>

@@ -22,6 +22,7 @@ class CreateArticlesTable extends Migration
             $table->string('title', 250);
             $table->date('published_at');
             $table->text('description');
+            $table->string('json_file_name', 12);
             $table->timestamps();
             
             // Relationship
