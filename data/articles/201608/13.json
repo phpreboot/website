@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Matthew Weier O'Phinney"
+    },
+    "website": {
+        "name": "MWOP.net",
+        "site_url": "mwop.net",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "23",
+        "name": "Zend Framework",
+        "description": "Articles related to Zend Framework"
+    },
+    "url": "https:\/\/mwop.net\/blog\/2016-08-17-zf-composer-autoloading.html",
+    "title": "Using composer to autoload ZF modules",
+    "published_at": "2016-08-17",
+    "description": "On his blog, Matthew posted how to auto load Zend Framework modules in ZF3. He start with how it was possible in ZF2 and now with ZF3, how easy it become with 'Zend component installer'.",
+    "json_file_name": "201608\/13.json"
+}
