@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Rob Allen"
+    },
+    "website": {
+        "name": "Akrabat.com",
+        "site_url": "akrabat.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "13",
+        "name": "PHP-General",
+        "description": "Article important about PHP but are not related to any framework or other defined category"
+    },
+    "url": "https:\/\/akrabat.com\/using-http2-with-php7-on-mac",
+    "title": "Using HTTP\/2 with PHP 7 on Mac",
+    "published_at": "2016-08-31",
+    "description": "On his personal blog, Rob Allen telling how to use HTTP\/2 (or HTTP2.0) with PHP 7 on Mac OX X. HTTP\/2 (originally named HTTP\/2.0) is a major revision of the HTTP network protocol used by the World Wide Web. To know more about HTTP\/2, please check https:\/\/en.wikipedia.org\/wiki\/HTTP\/2 or https:\/\/http2.github.io",
+    "json_file_name": "201608\/11.json"
+}

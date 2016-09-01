@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Alan Storm"
+    },
+    "website": {
+        "name": "Alanstorm.com",
+        "site_url": "alanstorm.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "11",
+        "name": "Magento",
+        "description": "Articles related to Magento"
+    },
+    "url": "http:\/\/alanstorm.com\/magento_2_autoloader_and_class_generation",
+    "title": "Magento 2 Autoloader and Class Generation",
+    "published_at": "2016-08-31",
+    "description": "On his blog, Alan Storm tell in details about auto loading in Magento 2. He starts with basics like what is auto-loading, why is it important and then going advanced with how it is done in Magento 2.",
+    "json_file_name": "201608\/14.json"
+}

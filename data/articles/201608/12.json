@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Matt Stauffer"
+    },
+    "website": {
+        "name": "mattstauffer",
+        "site_url": "mattstauffer.co",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "9",
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/mattstauffer.co\/blog\/directory-structure-changes-in-laravel-5-3",
+    "title": "Directory structure changes in Laravel 5.3",
+    "published_at": "2016-08-08",
+    "description": "On his blog, Matt Stauffer has a blog series about 'New features in Laravel 5.3'. Series articles can be seen at https:\/\/mattstauffer.co\/blog\/series\/new-features-in-laravel-5-3. In the recent post, he is discussing about 'Directory structure changes in Laravel 5.3'.",
+    "json_file_name": "201608\/12.json"
+}
