@@ -153,7 +153,7 @@ class ImportArticles extends Command
         }
 
         // Publish_at format must be yyyy-mm-dd. Lets break & validate.
-        $publishDateArray = explode('-' , $this->json['published_at']);
+        $publishDateArray = explode('-', $this->json['published_at']);
 
         if (count($publishDateArray) != 3) {
             $this->error("publish_at key is not valid.");
@@ -161,7 +161,7 @@ class ImportArticles extends Command
         }
 
         // Make two digit year, as needed in magazine table.
-        $year = (int)($publishDateArray[0]);
+        $year = (int) ($publishDateArray[0]);
         $twoDigitYear = ($year > 2000) ? ($year - 2000) : $year;
 
         if ($year < self::MIN_YEAR || $year > self::MAX_YEAR) {
@@ -169,7 +169,7 @@ class ImportArticles extends Command
             exit();
         }
 
-        $month = (int)($publishDateArray[1]);
+        $month = (int) ($publishDateArray[1]);
 
         if ($month < 1 || $month > 12) {
             $this->error("Month under key 'published_at' is not correct.");
@@ -209,7 +209,7 @@ class ImportArticles extends Command
         $name = $longMonths[$month - 1] . ' ' . $year;
         $shortName = $shortMonth[$month - 1] . $twoDigitYear;
 
-        $magazine = Magazine::where('short_name' , $shortName)->first();
+        $magazine = Magazine::where('short_name', $shortName)->first();
 
         if ($magazine == null) {
             $this->info("Magazine do not exist, creating new.");
@@ -458,10 +458,10 @@ class ImportArticles extends Command
             exit();
         }
 
-        $this->folder = (int)$input[0];
-        $this->file = (int)$input[1];
+        $this->folder = (int) $input[0];
+        $this->file = (int) $input[1];
 
-        $year = (int)($this->folder / 100);
+        $year = (int) ($this->folder / 100);
 
         if ($year < self::MIN_YEAR || $year > self::MAX_YEAR) {
             $this->error("Year is not correct.");
