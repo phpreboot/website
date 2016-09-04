@@ -161,6 +161,9 @@ class GenerateArticle extends Command
         }
     }
 
+    /**
+     * @param string $websiteDomain
+     */
     protected function getNewWebsite($websiteDomain)
     {
         $websiteArray = [];
