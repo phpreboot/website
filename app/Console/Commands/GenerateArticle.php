@@ -55,7 +55,7 @@ class GenerateArticle extends Command
 
     public function handle()
     {
-        if(!$this->collectUserInput()) {
+        if (!$this->collectUserInput()) {
             return false;
         }
         $this->writeFile();
@@ -72,9 +72,12 @@ class GenerateArticle extends Command
         $this->files->put($path, $this->jsonEncodedUserInput);
     }
 
+    /**
+     * @param string $path
+     */
     protected function makeDirectory($path)
     {
-        if (! $this->files->isDirectory(dirname($path))) {
+        if (!$this->files->isDirectory(dirname($path))) {
             $this->info("Folder '" . dirname($path) . "'' not exists. Creating.");
 
             $this->files->makeDirectory(dirname($path), 0777, true, true);
@@ -164,7 +167,7 @@ class GenerateArticle extends Command
         $websiteArray['name'] = $this->ask("What is suitable name of the website. (Ideally name should uniquely identify website.)");
         $websiteArray['site_url'] = $websiteDomain;
 
-        if($this->confirm("It there and RSS feed of the website? (And you know that) y|N")) {
+        if ($this->confirm("It there and RSS feed of the website? (And you know that) y|N")) {
             $websiteArray['feed_url'] = $this->ask("Enter feed_url.");
         } else {
             $websiteArray['feed_url'] = "";
@@ -173,6 +176,9 @@ class GenerateArticle extends Command
         return $websiteArray;
     }
 
+    /**
+     * @param string $websiteDomain
+     */
     protected function getExistingWebsite($websites, $websiteDomain)
     {
         $websiteArray = [];
