@@ -43,11 +43,6 @@ class GenerateArticle extends Command
      */
     protected $files;
 
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
     public function __construct(Filesystem $files)
     {
         parent::__construct();
@@ -55,15 +50,12 @@ class GenerateArticle extends Command
         $this->userInput = [];
         $this->files = $files;
     }
-
-    /**
-     * Execute the console command.
-     *
-     * @return mixed
-     */
+    
     public function handle()
     {
-        $this->collectUserInput();
+        if(!$this->collectUserInput()) {
+            return false;
+        }
         $this->writeFile();
     }
 
@@ -102,7 +94,7 @@ class GenerateArticle extends Command
             $this->line("Thanks for correct answer.");
             $this->error("Although we can't go further with outdated database, updating database is very simple.");
             $this->line("Please visit 'Set project locally' section of http://github.com/phpreboot/website for information about updating database.");
-            exit();
+            return false;
         }
 
         $this->userInput['author'] = $this->collectAuthorInfo();
@@ -110,6 +102,7 @@ class GenerateArticle extends Command
         $this->userInput['category'] = $this->collectCategoryInfo();
         $this->collectArticleInfo();
         $this->encodeUserInput();
+        return;
     }
 
     protected function encodeUserInput()
