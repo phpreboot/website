@@ -101,7 +101,7 @@ class ImportArticles extends Command
     /**
      * Execute the console command.
      *
-     * @return mixed
+     * @return boolean
      */
     public function handle()
     {
@@ -514,6 +514,9 @@ class ImportArticles extends Command
         return true;
     }
 
+    /**
+     * @param integer $year
+     */
     protected function validateYear($year)
     {
         return $year < self::MIN_YEAR || $year > self::MAX_YEAR ? false : true;
