@@ -39,7 +39,9 @@ class GenerateArticle extends Command
     protected $jsonEncodedUserInput;
 
     /**
-     * @var Illuminate\Filesystem\Filesystem
+     * Variable to store filesystem object
+     *
+     * @var Filesystem
      */
     protected $files;
 
@@ -50,13 +52,14 @@ class GenerateArticle extends Command
         $this->userInput = [];
         $this->files = $files;
     }
-    
+
     public function handle()
     {
         if(!$this->collectUserInput()) {
             return false;
         }
         $this->writeFile();
+        return true;
     }
 
     protected function writeFile()
@@ -102,7 +105,7 @@ class GenerateArticle extends Command
         $this->userInput['category'] = $this->collectCategoryInfo();
         $this->collectArticleInfo();
         $this->encodeUserInput();
-        return;
+        return true;
     }
 
     protected function encodeUserInput()
@@ -143,8 +146,6 @@ class GenerateArticle extends Command
 
     protected function collectWebsiteInfo()
     {
-        $websiteArray = [];
-
         $this->line("Let's first check if website is available in database or not.");
         $websiteDomain = $this->ask("Enter website (without http(s), www or /. Just domain and tld like 'phpreboot.com'.");
 
