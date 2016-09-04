@@ -182,7 +182,7 @@ class ImportArticles extends Command
         $year = (int) ($publishDateArray[0]);
         $twoDigitYear = ($year > 2000) ? ($year - 2000) : $year;
 
-        if ($year < self::MIN_YEAR || $year > self::MAX_YEAR) {
+        if (!$this->validateYear($year)) {
             $this->error("Article published outside allowed publication period.");
             return false;
         }
@@ -320,6 +320,7 @@ class ImportArticles extends Command
         $this->website->feed_url = $this->json['website']['feed_url'];
 
         // Not saving website right now. Lets first validate other things, and save everything at once.
+        return true;
     }
 
     protected function importAuthor()
@@ -356,6 +357,7 @@ class ImportArticles extends Command
         $this->author->name = $this->json['author']['name'];
 
         // Not saving author right now. Lets first validate other things, and save everything at once.
+        return true;
     }
 
     protected function importFile()
@@ -479,7 +481,7 @@ class ImportArticles extends Command
 
         $year = (int) ($this->folder / 100);
 
-        if ($year < self::MIN_YEAR || $year > self::MAX_YEAR) {
+        if (!$this->validateYear($year)) {
             $this->error("Year is not correct.");
             return false;
         }
@@ -510,5 +512,10 @@ class ImportArticles extends Command
             return false;
         }
         return true;
+    }
+
+    protected function validateYear($year)
+    {
+        return $year < self::MIN_YEAR || $year > self::MAX_YEAR ? false : true;
     }
 }
