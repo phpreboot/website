@@ -7,3 +7,4 @@ Homestead.json
 /reports/copypaste
 /reports/phpmd
 /reports/phpmetrics
+.vagrant
