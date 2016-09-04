@@ -56,22 +56,22 @@ class ImportArticles extends Command
     protected $json;
 
     /**
-     * @var App\Models\Author
+     * @var Author
      */
     protected $author;
 
     /**
-     * @var App\Models\Website
+     * @var Website
      */
     protected $website;
 
     /**
-     * @var App\Models\Category
+     * @var Category
      */
     protected $category;
 
     /**
-     * @var App\Models\Magazine
+     * @var Magazine
      */
     protected $magazine;
 
