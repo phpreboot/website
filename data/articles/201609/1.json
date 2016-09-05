@@ -1,0 +1,20 @@
+{
+    "author": {
+        "name": "Gary Hockin"
+    },
+    "website": {
+        "name": "Hockin blog",
+        "site_url": "hock.in",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 23,
+        "name": "Zend Framework",
+        "description": "Articles related to Zend Framework"
+    },
+    "url": "https:\/\/blog.hock.in\/2016\/09\/02\/configabstractfactory-in-zendservicemanager",
+    "title": "ConfigAbstractFactory in Zend ServiceManager",
+    "published_at": "2016-09-02",
+    "description": "On his blog, Gary tells how to use ConfigAbstractFactory for Zend ServiceManager 3, introduced in ZF 3.2.",
+    "json_file_name": "201609\/1.json"
+}
