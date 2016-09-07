@@ -13,7 +13,7 @@ class AddTwitterToAuthorsTable extends Migration
     public function up()
     {
         Schema::table('authors', function (Blueprint $table) {
-            $table->string('twitter')->nullable();
+            $table->string('twitter')->after('name')->nullable();
         });
     }
 

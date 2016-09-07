@@ -207,16 +207,19 @@ class GenerateArticle extends Command
     protected function collectAuthorInfo()
     {
         $enteredAuthorName = $this->ask("Enter author name?");
+        $enteredAuthorTwitter = $this->ask("Enter author's twitter handle (without '@').");
 
         $authorArray = [
             "name" => $enteredAuthorName
         ];
 
-        $author = Author::where('name', 'like', '%' . $enteredAuthorName . '%')->get();
+        $author = Author::where('name', 'like', '%' . $enteredAuthorName . '%')
+                    ->orWhere('twitter', 'like', '%' . $enteredAuthorTwitter . '%')
+                    ->get();
 
         if (count($author) > 0) {
             $this->line("We find this or similar author in the database. Please check if you mean any one of them:");
-            $headers = ["id", "name", "created_at", "updated_at"];
+            $headers = ["id", "name", "twitter", "created_at", "updated_at"];
             $this->table($headers, $author->toArray());
 
             if ($this->confirm("Do you mean any of above author? [y|N]")) {
@@ -226,11 +229,14 @@ class GenerateArticle extends Command
 
                 $authorArray['id'] = $author->id;
                 $authorArray['name'] = $author->name;
+                $authorArray['twitter'] = ($author->twitter == null || $author->twitter == '') ? $enteredAuthorTwitter : $author->twitter;
                 return $authorArray;
             }
         }
 
         $authorArray['name'] = $enteredAuthorName;
+        $authorArray['twitter'] = $enteredAuthorTwitter;
+
         return $authorArray;
     }
 }
