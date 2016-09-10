@@ -320,6 +320,13 @@ class ImportArticles extends Command
 
             // Validate input author name is same as in database.
             if ($author->name == $this->json['author']['name']) {
+                // Issue 76: twitter handle
+                // Check is needed due to old JSON files made during Oct and Nov 2016.
+                // ToDo: Update JSON files and remove this check.
+                if (isset($this->json['author']['twitter'])) {
+                    $author->twitter = $this->json['author']['twitter'];
+                }
+
                 $this->author = $author;
                 return;
             }
@@ -334,6 +341,12 @@ class ImportArticles extends Command
 
         $this->author = new Author();
         $this->author->name = $this->json['author']['name'];
+        // Issue 76: twitter handle
+        // Check is needed due to old JSON files made during Oct and Nov 2016.
+        // ToDo: Update JSON files and remove this check.
+        $this->author->twitter = isset($this->json['author']['twitter']) 
+                ? $this->json['author']['twitter'] 
+                : null;
 
         // Not saving author right now. Lets first validate other things, and save everything at once.
     }
@@ -377,6 +390,10 @@ class ImportArticles extends Command
             $this->error("Error: File do not have mandatory 'name' key, under 'author' key.");
             exit;
         }
+
+        // In issue 76, we added twitter.
+        // We can't validate author->twitter as old migration files do not have them.
+        // ToDo: We need to add twitter in old migration files (in Oct & Nov 2016) and validate twitter.
 
         // Check Website exist
         if (!isset($this->json['website'])) {

@@ -8,3 +8,4 @@ Homestead.json
 /reports/phpmd
 /reports/phpmetrics
 .vagrant
+.DS_Store
