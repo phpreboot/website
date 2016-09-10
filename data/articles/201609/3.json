@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Elton Minetto",
+        "twitter": "eminetto"
+    },
+    "website": {
+        "name": "hackernoon",
+        "site_url": "hackernoon.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 13,
+        "name": "PHP-General",
+        "description": "Article important about PHP but are not related to any framework or other defined category"
+    },
+    "url": "https:\/\/hackernoon.com\/generating-code-coverage-with-phpunite-and-phpdbg-4d20347ffb45#.789qohykm",
+    "title": "Generating Code Coverage with PHPUnit and phpdbg",
+    "published_at": "2016-09-06",
+    "description": "On Hackernoon.com, Elton Minetto posted an article ragarding 'generating code coverage with PHP unit and phpdbg' to increase performance of code coverage report generation using php unit.",
+    "json_file_name": "201609\/3.json"
+}
