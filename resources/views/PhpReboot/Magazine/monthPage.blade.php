@@ -50,5 +50,46 @@
                 </div>
             @endforeach
         </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <h3 class="box-title">What is PHP Reboot magazine?</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body text-justify">
+                    PHP Reboot is a PHP developer's user group in Pune, India.
+                    <br/><br/>
+                    To help developers remain updated with latest technology, we collect some good
+                    articles and tutorials around the web, and call it as magazine. Articles here are
+                    categorized in month and category. <strong>We are not original authors. Original author and
+                    website where articles were orignally published are given on article detail page.</strong>
+                    <br/><br/>
+                    Thus PHP reboot magazine is just collection of articles:
+                    <ul>
+                        <li>Written by developers (Personal blogs/free tutorial sites)</li>
+                        <li>Collected by developers</li>
+                        <li>&amp; meant for developers</li>
+                    </ul>
+                    <br/>
+                    <strong>PHPreboot.com is a open-source website and its source can be forked/downloaded
+                    from <a href="https://github.com/phpreboot/website" target="_blank">github</a>.</strong>
+                    <br/><br/>
+                    Like any community effort, we depends on community to succeed, and we are looking
+                    forward to active contribution from other developers.
+                    <br/><br/>
+                    If you are willing to contribute (just few minutes/hours a week), there are multiple
+                    ways to contribute. Please 
+                    <a href="https://github.com/phpreboot/website#contribution" target="_blank">click here</a>
+                    to see how you can contribute.
+                </div>
+            </div>
+        </div>
     </div>
 @endsection

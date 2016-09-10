@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Joe Ferguson",
+        "twitter": "JoePFerguson"
+    },
+    "website": {
+        "name": "JoeFerguson.me",
+        "site_url": "joeferguson.me",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 1,
+        "name": "Architecture",
+        "description": "Articles discussing about system architecture in general and not associated with any framework\/CMS."
+    },
+    "url": "https:\/\/www.joeferguson.me\/solidify-fragile-tests",
+    "title": "Solidify Fragile Tests",
+    "published_at": "2016-08-31",
+    "description": "On his personal blog, Joe Ferguson shared personal experience recently about unit testing and nice quick tutorial aregarding 'Solidify fragile tests'.",
+    "json_file_name": "201608\/17.json"
+}
