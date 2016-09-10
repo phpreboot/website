@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Matthew Setter",
+        "id": 2,
+        "twitter": "settermjd"
+    },
+    "website": {
+        "id": 2,
+        "name": "Master Zend Framework",
+        "site_url": "masterzendframework.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 19,
+        "name": "Tools",
+        "description": "Articles discussing some web development tools"
+    },
+    "url": "http:\/\/www.masterzendframework.com\/docker-development-environment",
+    "title": "How To Build a Local Development Environment Using Docker",
+    "published_at": "2016-08-29",
+    "description": "On his blog, Matthew posted a short tutorial about setting docker as local development environment. A must read if you are learning docker.",
+    "json_file_name": "201608\/15.json"
+}
