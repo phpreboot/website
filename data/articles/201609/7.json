@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Javier Eguiluz",
+        "twitter": "javiereguiluz"
+    },
+    "website": {
+        "name": "Symfony",
+        "site_url": "symfony.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "18",
+        "name": "Symfony",
+        "description": "Articles related to Symfony framework"
+    },
+    "url": "http:\/\/symfony.com\/blog\/new-in-symfony-3-2-filesystem-improvements",
+    "title": "New in Symfony 3.2: Filesystem improvements",
+    "published_at": "2016-09-07",
+    "description": "On Symfony blog, Javier had a new post describing filesystem improvements in symfony version 3.2. He is discussing about two new methods: readlink() and hardlink().",
+    "json_file_name": "201609\/7.json"
+}
