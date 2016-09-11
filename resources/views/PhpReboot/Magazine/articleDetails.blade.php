@@ -31,6 +31,24 @@
                     <strong><i class="fa fa-user margin-r-5"></i> Author</strong>
                     <p class="text-muted">
                         {{ $article->author->name }}
+                        </br>
+                        {{-- -------------------------------------------------------------------
+                          -- We need this check because few authors do not have twitter account.
+                          -- -------------------------------------------------------------------
+                          -- 
+                          -- Once we have twitter account for all the authors, we can remove
+                          -- this check.
+                          --
+                          -- If author do not have twitter account, do not show twitter link.
+                          --
+                          -- -------------------------------------------------------------------
+                          --}}
+                        @if ($article->author->twitter != null && $article->author->twitter != "")
+                            <i class="fa fa-twitter margin-r-5"></i>
+                            <a href="https://twitter.com/{{ $article->author->twitter }}" target="_blank">
+                                {{ $article->author->twitter }}
+                            </a>
+                        @endif
                     </p>
                     <hr/>
                     <strong><i class="fa fa-globe margin-r-5"></i> Published on</strong>
