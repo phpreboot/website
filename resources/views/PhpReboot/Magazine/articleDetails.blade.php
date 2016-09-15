@@ -65,6 +65,13 @@
                         <i class="fa fa-globe margin-r-5"></i> Categoty
                         <span class="badge bg-aqua-active pull-right">{{ $article->category->name }}</span>
                     </strong>
+                    <hr/>
+                    <strong>
+                        <i class="fa fa-globe margin-r-5"></i> Actions
+                    </strong>
+                    <p class="text-muted">
+                        <i class="fa fa-star margin-r-5"></i> Add to favorite
+                    </p>
                 </div>
             </div>
             <div class="box box-primary">

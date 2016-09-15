@@ -37,4 +37,12 @@ class Article extends Model
     {
         return $this->belongsTo('App\Models\Website');
     }
+
+    /**
+     * Get all records, where article is favourite.
+     */
+    public function favourite()
+    {
+        return $this->hasMany('App\Models\Favourite');
+    }
 }
