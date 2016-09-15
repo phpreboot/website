@@ -51,8 +51,7 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2014-2016 PHP Reboot.</strong> All rights
-            reserved.<br>
+            <strong>Copyright &copy; 2014-2016 PHP Reboot.</strong><br>
             Blog post in magazine is just for knowledge sharing. They are copyright property of original site/authors.
         </footer>
     </div>
