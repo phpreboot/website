@@ -51,9 +51,6 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <div class="pull-right hidden-xs">
-                <b>Version</b> 0.1.0
-            </div>
             <strong>Copyright &copy; 2014-2016 PHP Reboot.</strong> All rights
             reserved.<br>
             Blog post in magazine is just for knowledge sharing. They are copyright property of original site/authors.
