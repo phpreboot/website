@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Pascal Martin",
+        "twitter": "pascal_martin"
+    },
+    "website": {
+        "name": "pascal-martin",
+        "site_url": "pascal-martin.fr",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 13,
+        "name": "PHP-General",
+        "description": "Article important about PHP but are not related to any framework or other defined category"
+    },
+    "url": "https:\/\/blog.pascal-martin.fr\/post\/php71-en-introduction-and-release-cycle.html",
+    "title": "PHP 7.1: introduction and release cycle",
+    "published_at": "2016-09-05",
+    "description": "On his blog, Pascal is posting a series of articles, describing new features of PHP 7.1. In the recent post, fourth in the series, he is telling about php release process. This is must read series for any PHP developer.",
+    "json_file_name": "201609\/5.json"
+}

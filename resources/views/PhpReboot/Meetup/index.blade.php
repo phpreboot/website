@@ -64,15 +64,21 @@
                     <div class="pad">
                         <div class="row">
                             <div class="col-sm-12 text-justify">
-                                <strong>Date &amp; time:</strong> September 3rd, 2016, 11 am onwards.<br/>
-                                <strong>Topic:</strong> Writing clean code.<br/>
-                                This month's meetup theme is writing clean code. By clean code, we mean code that is simple, easy to read & easy to extend/maintain.<br/>
-                                <strong>How to attend:</strong> <a href="https://www.meetup.com/PHPReboot/events/230392239/" target="_blank">RSVP at meetup.com</a><br/><br/>
-                                <strong>Major topic:</strong> 'SOLID principles' by Surendra Shukla, Consultant, CDK Global India Pvt. Ltd.<br/>
-                                S.O.L.I.D is an acronym for the first five object-oriented design(OOD) principles by Robert C. Martin.<br/>
-                                These principles, when combined together, make it easy for a programmer to develop software that are easy to maintain and extend. They also make it easy for developers to avoid code smells, easily refactor code, and are also a part of the agile or adaptive software development.<br/><br/>
-                                <strong>Side talk:</strong> 'PHP QA Tools' by Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
-                                PHP QA tools are used to find code quality issues in our code. Thus, in short, they help us to improve our code quality.<br/>
+                                <strong>Date &amp; time:</strong> October 8th, 2016, 11 am onwards.<br/>
+                                <strong>Topic:</strong> Laravel workshop.<br/>
+                                <strong>How to attend:</strong> <a href="https://www.meetup.com/PHPReboot/events/230392242/" target="_blank">RSVP at meetup.com</a><br/><br/>
+                                <strong>Major topic:</strong> 'Laravel'<br/>
+                                <strong>Speaker:</strong> Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
+                                <strong>Details:</strong> Well, we can't cover laravel in 45 minutes. However this meet-up is scheduled along with a workshop. <br/></br>
+                                <strong>Workshop:</strong> Laravel session will be followed by an optional workshop, where we will apply what we learned, to make a small laravel based project.<br/>
+                                <strong>Prerequisite for workshop:</strong> To participate in workshop, please come with fully charged laptop.
+                                Also make sure it have local PHP development environment. We recommend using vagrant, virtual box with scotch 
+                                box but WAMP, XAMPP, MAMP or even PHP in-build web server will also work. So minimum required softwares are: <br/>
+                                <ol>
+                                    <li>PHP 5.6 or PHP 7</li>
+                                    <li>MySQL (or any other RDBMS like postgres, SQLite, Maria DB etc) </li>
+                                    <li>Composer</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
@@ -82,6 +88,124 @@
     </div>
     <h3>Past meet-ups</h3>
     <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="box box-warning box-solid collapsed-box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Writing clean code</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                    <div class="pad">
+                        <div class="row">
+                            <div class="col-sm-12 text-justify">
+                                <strong>Date &amp; time:</strong> September 3rd, 2016, 11 am.<br/>
+                                <strong>Major topic:</strong> SOLID principles.<br/>
+                                <strong>Speaker:</strong> Surendra Shukla, Consultant, CDK Global India Pvt. Ltd.<br/>
+                                <strong>Detils:</strong> S.O.L.I.D is an acronym for the first five object-oriented design(OOD) principles by Robert C. Martin.<br/>
+                                These principles, when combined together, make it easy for a programmer to develop software that are easy to maintain and extend. They also make it easy for developers to avoid code smells, easily refactor code, and are also a part of the agile or adaptive software development.<br/>
+                                <strong>Side talk:</strong> 'PHP QA Tools' and QA tools workshop.<br/>
+                                <strong>Speaker:</strong> Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
+                                <strong>Details:</strong> PHP QA tools are used to find code quality issues in our code. Thus, in short, they help us to improve our code quality.<br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-warning box-solid collapsed-box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Special meetup with Michelangelo</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                    <div class="pad">
+                        <div class="row">
+                            <div class="col-sm-12 text-justify">
+                                <strong>Date &amp; time:</strong> April 20, 2016, 8 pm.<br/>
+                                <strong>Speaker:</strong> Michelangelo Van Dam.<br/>
+                                <strong>Details:</strong> Michelangelo  a.k.a. DragonBe was in India, visiting Ansh Systems Pvt. Ltd. on official tour. We got a chance to invite him, and he agreed for a meetup, so that PHP community in Pune gets chance to meet and learn from him.</a><br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-warning box-solid collapsed-box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Using composer effectively</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                    <div class="pad">
+                        <div class="row">
+                            <div class="col-sm-12 text-justify">
+                                <strong>Date &amp; time:</strong> Nov 28, 2015, 11 a.m.<br/>
+                                <strong>Speaker:</strong> Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
+                                <strong>slides:</strong> <a href="https://speakerdeck.com/kapilsharma/using-composer-effectively" target="_blank">Speaker deck</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-warning box-solid collapsed-box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Refactoring - Improving design of code.</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                    <div class="pad">
+                        <div class="row">
+                            <div class="col-sm-12 text-justify">
+                                <strong>Date &amp; time:</strong> Apr 18, 2015, 11 a.m.<br/>
+                                <strong>Speaker:</strong> Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
+                                <!--strong>slides:</strong> <a href="https://speakerdeck.com/kapilsharma/using-composer-effectively" target="_blank">Speaker deck</a-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box box-warning box-solid collapsed-box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Web security in PHP..</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body no-padding">
+                    <div class="pad">
+                        <div class="row">
+                            <div class="col-sm-12 text-justify">
+                                <strong>Date &amp; time:</strong> Aug 2, 2014, 11 a.m.<br/>
+                                <strong>Speaker:</strong> Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
+                                <strong>slides:</strong> <a href="http://www.slideshare.net/kapilsharmainfo/web-application-security-37610917" target="_blank">Speaker deck</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-sm-12 col-md-6">
             <div class="box box-warning box-solid collapsed-box">
                 <div class="box-header with-border">
@@ -172,97 +296,6 @@
                                 <strong>slides (Basics by Ramesh):</strong> <a href="https://speakerdeck.com/kapilsharma/git-basics" target="_blank">Speaker deck</a><br/>
                                 <strong>Slides (Advanced by Kapil):</strong> <a href="https://speakerdeck.com/kapilsharma/git-advanced" target="_blank">Speaker deck</a><br/>
                                 <strong>Workshop (by Kapil):</strong> <a href="https://github.com/kapilsharma/workingwithgit" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <div class="box box-warning box-solid collapsed-box">
-                <div class="box-header with-border">
-                    <h3 class="box-title">Special meetup with Michelangelo</h3>
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
-                        </button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                    </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
-                    <div class="pad">
-                        <div class="row">
-                            <div class="col-sm-12 text-justify">
-                                <strong>Date &amp; time:</strong> April 20, 2016, 8 pm.<br/>
-                                <strong>Speaker:</strong> Michelangelo Van Dam.<br/>
-                                <strong>Details:</strong> Michelangelo  a.k.a. DragonBe was in India, visiting Ansh Systems Pvt. Ltd. on official tour. We got a chance to invite him, and he agreed for a meetup, so that PHP community in Pune gets chance to meet and learn from him.</a><br/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box box-warning box-solid collapsed-box">
-                <div class="box-header with-border">
-                    <h3 class="box-title">Using composer effectively</h3>
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
-                        </button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                    </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
-                    <div class="pad">
-                        <div class="row">
-                            <div class="col-sm-12 text-justify">
-                                <strong>Date &amp; time:</strong> Nov 28, 2015, 11 a.m.<br/>
-                                <strong>Speaker:</strong> Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
-                                <strong>slides:</strong> <a href="https://speakerdeck.com/kapilsharma/using-composer-effectively" target="_blank">Speaker deck</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box box-warning box-solid collapsed-box">
-                <div class="box-header with-border">
-                    <h3 class="box-title">Refactoring - Improving design of code.</h3>
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
-                        </button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                    </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
-                    <div class="pad">
-                        <div class="row">
-                            <div class="col-sm-12 text-justify">
-                                <strong>Date &amp; time:</strong> Apr 18, 2015, 11 a.m.<br/>
-                                <strong>Speaker:</strong> Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
-                                <!--strong>slides:</strong> <a href="https://speakerdeck.com/kapilsharma/using-composer-effectively" target="_blank">Speaker deck</a-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box box-warning box-solid collapsed-box">
-                <div class="box-header with-border">
-                    <h3 class="box-title">Web security in PHP..</h3>
-                    <div class="box-tools pull-right">
-                        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
-                        </button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                    </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
-                    <div class="pad">
-                        <div class="row">
-                            <div class="col-sm-12 text-justify">
-                                <strong>Date &amp; time:</strong> Aug 2, 2014, 11 a.m.<br/>
-                                <strong>Speaker:</strong> Kapil Sharma, Technical Architect, Ansh Systems Pvt. Ltd.<br/>
-                                <strong>slides:</strong> <a href="http://www.slideshare.net/kapilsharmainfo/web-application-security-37610917" target="_blank">Speaker deck</a>
                             </div>
                         </div>
                     </div>

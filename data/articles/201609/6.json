@@ -1,0 +1,22 @@
+{
+    "author": {
+        "name": "Diaa Fares",
+        "twitter": "DevDiaa"
+    },
+    "website": {
+        "id": 5,
+        "name": "Laravel news",
+        "site_url": "laravel-news.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 9,
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/laravel-news.com\/2016\/09\/improved-model-generation-with-laracademy-generators",
+    "title": "Improved model generation with Laracademy Generators",
+    "published_at": "2016-09-02",
+    "description": "On laravel-news.com, Diaa Fares is explaining how to use Laracademy generators to generate improved models for your laravel projects.",
+    "json_file_name": "201609\/6.json"
+}

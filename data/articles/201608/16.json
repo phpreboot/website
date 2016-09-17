@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Beau Simensen",
+        "twitter": "beausimensen"
+    },
+    "website": {
+        "name": "Sculpin blog",
+        "site_url": "blog.sculpin.io",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 19,
+        "name": "Tools",
+        "description": "Articles discussing some web development tools"
+    },
+    "url": "https:\/\/blog.sculpin.io\/2016\/08\/31\/deprecating-phar-distribution-and-embedded-composer",
+    "title": "Deprecating Phar Distribution and Embedded Composer",
+    "published_at": "2016-08-31",
+    "description": "Sculpin is a static site generator, written in PHP. On sculpin blog, Beau is explaining how sculpin should be installed in future. It is going away with global phar installation and going forward, will be installed through composer.",
+    "json_file_name": "201608\/16.json"
+}
