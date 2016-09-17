@@ -6,6 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+    public $url;
+    public $title;
+    public $published_at;
+    public $description;
+    public $json_file_name;
+    public $category_id;
+    public $author_id;
+    public $website_id;
+    public $magazine_id;
+
     /**
      * Get the magazine that owns the article.
      */

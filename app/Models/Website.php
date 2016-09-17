@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Website extends Model
 {
+    public $name;
+    public $site_url;
+    public $feed_url;
+
     /**
      * Get the articles on website.
      */

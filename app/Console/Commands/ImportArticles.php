@@ -274,7 +274,7 @@ class ImportArticles extends Command
 
         // Author not set, lets create new author.
 
-        $this->category = new category();
+        $this->category = new Category();
         $this->category->name = $this->json['category']['name'];
 
         // Not saving category right now. Lets first validate other things, and save everything at once.
@@ -530,6 +530,7 @@ class ImportArticles extends Command
 
     /**
      * @param integer $year
+     * @return boolean
      */
     protected function validateYear($year)
     {
