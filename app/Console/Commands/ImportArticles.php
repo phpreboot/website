@@ -268,7 +268,6 @@ class ImportArticles extends Command
             }
 
             // ToDo: Author name is different. Give edit/continue/stop choice to user.
-            // Current default: continue.
             $this->category = $category;
             return true;
         }
@@ -309,7 +308,6 @@ class ImportArticles extends Command
             }
 
             // ToDo: Author name/site_url/feed_url is different. Give edit/continue/stop choice to user.
-            // Current default: continue.
             $this->website = $website;
             return true;
         }
@@ -346,7 +344,6 @@ class ImportArticles extends Command
             }
 
             // ToDo: Author name is different. Give edit/continue/stop choice to user.
-            // Current default: continue.
             $this->author = $author;
             return true;
         }
