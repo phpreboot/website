@@ -36,4 +36,12 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    /**
+     * Get all favourite articles of user.
+     */
+    public function favourite()
+    {
+        return $this->hasMany('App\Models\Favourite');
+    }
 }

@@ -150,11 +150,13 @@ return [
          */
         // Repositories
         App\Providers\MagazineRepositoryServiceProvider::class,
+        App\Providers\FavouriteRepositoryServiceProvider::class,
         App\Providers\ArticleRepositoryServiceProvider::class,
         // Services
-        App\Providers\MagazineServiceServiceProvider::class,
         App\Providers\ArticleServiceServiceProvider::class,
         App\Providers\ComposerServiceProvider::class,
+        App\Providers\FavouriteServiceServiceProvider::class,
+        App\Providers\MagazineServiceServiceProvider::class,
 
     ],
 
