@@ -86,7 +86,7 @@
                                         <h4 class="modal-title" id="myModalLabel">Please login</h4>
                                     </div>
                                     <div class="modal-body">
-                                        You must login before you can add a article as your favorite.
+                                        You must login before you can add an article as favorite.
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

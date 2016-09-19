@@ -47,11 +47,25 @@ class FavouriteService {
         return $this->favouriteRepo->isFavourite($userId, $articleId);
     }
 
+    /**
+     * Add article to favourites
+     * 
+     * @param integer $userId
+     * @param integer $articleId
+     * @return boolean result
+     */
     public function addToFavourite($userId, $articleId)
     {
         return $this->favouriteRepo->addToFavourite($userId, $articleId);
     }
 
+    /**
+     * Remove article from favourites
+     * 
+     * @param integer $userId
+     * @param integer $articleId
+     * @return boolean result
+     */
     public function removeFromFavourite($userId, $articleId)
     {
         return $this->favouriteRepo->removeFromFavourite($userId, $articleId);
