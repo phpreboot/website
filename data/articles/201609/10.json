@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Freek Van der Herten",
+        "twitter": "freekmurze"
+    },
+    "website": {
+        "name": "Murze.be",
+        "site_url": "murze.be",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "9",
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/murze.be\/2016\/09\/taking-care-of-backups-with-laravel",
+    "title": "Taking care of backups with Laravel",
+    "published_at": "2016-09-19",
+    "description": "On his blog, Freek is explaining why backup is important and how `laravel-backup` package can take care of backup of your laravel website.",
+    "json_file_name": "201609\/10.json"
+}

@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Alan Storm",
+        "id": "12",
+        "twitter": "alanstorm"
+    },
+    "website": {
+        "id": "11",
+        "name": "Alanstorm.com",
+        "site_url": "alanstorm.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "11",
+        "name": "Magento",
+        "description": "Articles related to Magento"
+    },
+    "url": "http:\/\/alanstorm.com\/magento_2_simplest_ui_knockout_component",
+    "title": "Magento 2: Simplest UI Knockout Component",
+    "published_at": "2016-09-16",
+    "description": "On his site, Alan has a new post with detailed tutorial explaining how to make simplest UI knockout component in Magento 2.",
+    "json_file_name": "201609\/11.json"
+}
