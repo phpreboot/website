@@ -1,0 +1,22 @@
+{
+    "author": {
+        "name": "Surajudeen Akande",
+        "twitter": "Babatoclean1"
+    },
+    "website": {
+        "id": "18",
+        "name": "DotDev.co",
+        "site_url": "dotdev.co",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "9",
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/dotdev.co\/implementing-account-kit-in-laravel-a40fbce516ad#.6ygyzkola",
+    "title": "Implementing Account Kit In Laravel",
+    "published_at": "2016-09-19",
+    "description": "On devdot.co, Surajudeen posted a tutorial with step-by-step process of implementing Facebooks Account Kit in Laravel. Account Kit is a quick and easy way to log in to new apps using just your email address or phone number \u2013 no password needed.",
+    "json_file_name": "201609\/12.json"
+}

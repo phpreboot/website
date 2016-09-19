@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Diaa Fares",
+        "id": "19",
+        "twitter": "DevDiaa"
+    },
+    "website": {
+        "id": "5",
+        "name": "Laravel news",
+        "site_url": "laravel-news.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "9",
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/laravel-news.com\/2016\/09\/pretty-routes",
+    "title": "View your routes through the browser with the Pretty Routes package",
+    "published_at": "2016-09-19",
+    "description": "On Laravel-news, Diaa posted about 'Pretty Routes' package, which help us to check laravel routes through browser.",
+    "json_file_name": "201609\/9.json"
+}
