@@ -4,7 +4,9 @@ namespace App\Http\Controllers\PhpReboot\Magazine;
 
 use App\Http\Controllers\Controller;
 use App\Services\ArticleService;
+use App\Services\FavouriteService;
 use App\Services\MagazineService;
+use Auth;
 
 /**
  * Class MagazineController contains common controllers for magazine.
@@ -12,10 +14,20 @@ use App\Services\MagazineService;
  */
 class MagazineController extends Controller
 {
-    public function monthPage($shortName, MagazineService $magazineService, ArticleService $articleService)
+    /**
+     * @var App\Services\ArticleService
+     */
+    protected $articleService;
+
+    public function __construct(ArticleService $articleService)
+    {
+        $this->articleService = $articleService;
+    }
+
+    public function monthPage($shortName, MagazineService $magazineService)
     {
         $magazine = $magazineService->getMagazineByShortName($shortName);
-        $articles = $articleService->getCategorizedArticlesByMagazine($magazine->id);
+        $articles = $this->articleService->getCategorizedArticlesByMagazine($magazine->id);
 
         $viewData = [
             'magazine' => $magazine,
@@ -27,15 +39,22 @@ class MagazineController extends Controller
         return view('PhpReboot.Magazine.monthPage', $viewData);
     }
 
-    public function articleDetails($articleId, ArticleService $articleService)
+    public function articleDetails($articleId, FavouriteService $favouriteService)
     {
-        $article = $articleService->getArticle($articleId);
+        $article = $this->articleService->getArticle($articleId);
 
         $viewData = [
             'article' => $article,
             'menu' => 'magazine',
             'contentTitleSmall' => $article->magazine->name . ' issue.',
         ];
+
+        if (Auth::check()) {
+            $viewData['isFavourite'] = $favouriteService->isFavourite(
+                Auth::user()->id,
+                $articleId
+            );
+        }
 
         return view('PhpReboot.Magazine.articleDetails', $viewData);
     }

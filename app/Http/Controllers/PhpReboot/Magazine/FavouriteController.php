@@ -24,7 +24,7 @@ class FavouriteController extends Controller
 
     /**
      * Display the page with all favourite of logged-in user.
-     * route = /magazine/favourite
+     * route = /user/favourite
      */
     public function getFavourite()
     {
@@ -33,8 +33,41 @@ class FavouriteController extends Controller
             return redirect('/auth/login');
         }
 
-        $favoriteArticles = $this->favoriteService->getFavouriteArticles(Auth::user());
+        $favoriteArticles = $this->favoriteService->getFavouriteArticles(Auth::user()->id);
 
-        dd($favoriteArticles);
+        $viewData = [
+            'favoriteArticles' => $favoriteArticles,
+            'favoriteArticlesCount' => count($favoriteArticles),
+            'menu' => 'favourite',
+            'contentTitleSmall' => 'my Favorites',
+        ];
+
+        return view('PhpReboot.Favourite.getFavourite', $viewData);
+    }
+
+    public function addToFavourite($articleId)
+    {
+        if (!Auth::check()){
+            return response()->json(["result" => false, "message" => "Not authorized"]);
+        }
+
+        if ($this->favoriteService->addToFavourite(Auth::user()->id, $articleId)) {
+            return response()->json(["result" => true]);
+        } else {
+            return response()->json(["result" => false]);
+        }
+    }
+
+    public function removeFromFavourite($articleId)
+    {
+        if (!Auth::check()){
+            return response()->json(["result" => false, "message" => "Not authorized"]);
+        }
+
+        if ($this->favoriteService->removeFromFavourite(Auth::user()->id, $articleId)) {
+            return response()->json(["result" => true]);
+        } else {
+            return response()->json(["result" => false]);
+        }
     }
 }

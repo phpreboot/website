@@ -30,6 +30,8 @@ Route::get('/magazine/{shortName}', 'PhpReboot\Magazine\MagazineController@month
 Route::get('/magazine/article/{articleId}', 'PhpReboot\Magazine\MagazineController@articleDetails');
 
 // Favourites
+Route::get('/user/favourite/add/{articleId}', 'PhpReboot\Magazine\FavouriteController@addToFavourite');
+Route::get('/user/favourite/remove/{articleId}', 'PhpReboot\Magazine\FavouriteController@removeFromFavourite');
 Route::get('/user/favourite', 'PhpReboot\Magazine\FavouriteController@getFavourite');
 
 /*

@@ -34,4 +34,26 @@ class FavouriteService {
     {
         return $this->favouriteRepo->getFavourites($userId);
     }
+
+    /**
+     * Check if article is favourite for a given user.
+     *
+     * @param integer $userId
+     * @param integer $articleId
+     * @return boolean true if article is already user's favorite, false otherwise.
+     */
+    public function isFavourite($userId, $articleId)
+    {
+        return $this->favouriteRepo->isFavourite($userId, $articleId);
+    }
+
+    public function addToFavourite($userId, $articleId)
+    {
+        return $this->favouriteRepo->addToFavourite($userId, $articleId);
+    }
+
+    public function removeFromFavourite($userId, $articleId)
+    {
+        return $this->favouriteRepo->removeFromFavourite($userId, $articleId);
+    }
 }

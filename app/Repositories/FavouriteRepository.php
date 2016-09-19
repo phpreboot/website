@@ -49,4 +49,65 @@ class FavouriteRepository implements FavouriteRepositoryInterface
     {
         return $this->favourite->where(self::COLUMN_USER_ID, $userId)->get();
     }
+
+    /**
+     * Check if article is favourite for a given user.
+     *
+     * @param integer $userId
+     * @param integer $articleId
+     * @return boolean true if article is already user's favorite, false otherwise.
+     */
+    public function isFavourite($userId, $articleId)
+    {
+        $favourite = $this->favourite
+            ->isFavourite($userId, $articleId)
+            ->get();
+        
+        return count($favourite) >= 1;
+    }
+
+    /**
+     * Add an article as favourite article for the user.
+     *
+     * @param integer $userId
+     * @param integer $articleId
+     * @return boolean result
+     */
+    public function addToFavourite($userId, $articleId)
+    {
+        // Confirm article is not already favourite.
+        if ($this->isFavourite($userId, $articleId)) {
+            return false;
+        }
+
+        $favourite = new Favourite();
+        $favourite->user_id = $userId;
+        $favourite->article_id = $articleId;
+        $favourite->save();
+
+        return true;
+    }
+
+    /**
+     * Add an article as favourite article for the user.
+     *
+     * @param integer $userId
+     * @param integer $articleId
+     * @return boolean result
+     */
+    public function removeFromFavourite($userId, $articleId)
+    {
+        // Confirm article is currently favourite.
+        if (!$this->isFavourite($userId, $articleId)) {
+            return false;
+        }
+
+        $favourite = $this->favourite
+            ->isFavourite($userId, $articleId)
+            ->first();
+
+        $favourite->delete();
+
+        return true;
+    }
 }
