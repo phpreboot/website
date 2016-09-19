@@ -35,6 +35,13 @@
                     </ul>
                 </li>
             @endif
+            @if (Auth::check())
+                <li class="treeview @if (isset($menu) && $menu == 'favourite') active @endif">
+                    <a href="{{ url('/user/favourite') }}">
+                        <i class="fa fa-star"></i> <span>Favourite</span>
+                    </a>
+                </li>
+            @endif
         </ul>
     </section>
     <!-- /.sidebar -->
