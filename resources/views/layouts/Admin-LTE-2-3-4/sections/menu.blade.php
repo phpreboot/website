@@ -11,7 +11,7 @@
             </li>
             <li class="treeview @if (isset($menu) && $menu == 'meetup') active @endif">
                 <a href="{{ route('meetup') }}">
-                    <i class="fa fa-credit-card"></i> <span>Meet-ups</span>
+                    <i class="fa fa-users"></i> <span>Meet-ups</span>
                 </a>
             </li>
             @if ($totalMagazine >= 1)
