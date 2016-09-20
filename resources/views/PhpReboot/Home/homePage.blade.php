@@ -13,7 +13,7 @@
                     <h3 class="widget-user-username">Meet ups</h3>
                     <h5 class="widget-user-desc">meetup.com</h5>
                     <div class="phpricon">
-                        <i class="fa fa-credit-card"></i>
+                        <i class="fa fa-users"></i>
                     </div>
                 </div>
                 <div class="widget-user-image">
@@ -23,7 +23,7 @@
                     <div class="row">
                         <div class="col-sm-4 border-right">
                             <div class="description-block">
-                                <h5 class="description-header">286</h5>
+                                <h5 class="description-header">295</h5>
                                 <span class="description-text">Members</span>
                             </div>
                             <!-- /.description-block -->
@@ -31,7 +31,7 @@
                         <!-- /.col -->
                         <div class="col-sm-4 border-right">
                             <div class="description-block">
-                                <h5 class="description-header">12</h5>
+                                <h5 class="description-header">13</h5>
                                 <span class="description-text">Meetups</span>
                             </div>
                             <!-- /.description-block -->
@@ -39,7 +39,7 @@
                         <!-- /.col -->
                         <div class="col-sm-4">
                             <div class="description-block">
-                                <h5 class="description-header">03/09/16</h5>
+                                <h5 class="description-header">08/09/2016</h5>
                                 <span class="description-text">Next</span>
                             </div>
                             <!-- /.description-block -->
@@ -49,42 +49,7 @@
                     <div class="row">
                         <div class="col-sm-12 border-right">
                             <div class="pull-right">
-                                <a href="{{ route('meetup') }}">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                </div>
-            </div>
-            <!-- /.widget-user -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-4">
-            <!-- Widget: user widget style 1 -->
-            <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header bg-gray-active">
-                    <h3 class="widget-user-username">Magazine</h3>
-                    <h5 class="widget-user-desc">Collection of blogs and news.</h5>
-                </div>
-                <div class="widget-user-image">
-                    <img class="img-circle" src="/img/logo200x200txt.png" alt="User Avatar">
-                </div>
-                <div class="box-footer bg-gray-active">
-                    <div class="row">
-                        <div class="col-sm-12 border-right">
-                            <div class="description-block">
-                                <h5 class="description-header">Under development</h5>
-                                <span class="description-text">Broken due to Jekyll issue.</span>
-                            </div>
-                            <!-- /.description-block -->
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 border-right">
-                            <div class="pull-right">
-                                Read more
+                                <a href="{{ route('meetup') }}" style="color:#FFF">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -101,6 +66,9 @@
                 <div class="widget-user-header bg-orange-active">
                     <h3 class="widget-user-username">PHP Conference</h3>
                     <h5 class="widget-user-desc">To be announced</h5>
+                    <div class="phpricon">
+                        <i class="fa fa-microphone"></i>
+                    </div>
                 </div>
                 <div class="widget-user-image">
                     <img class="img-circle" src="/img/logo200x200txt.png" alt="User Avatar">
@@ -128,6 +96,60 @@
             <!-- /.widget-user -->
         </div>
         <!-- /.col -->
+        <!-- /.col -->
+        <div class="col-md-4">
+            <!-- Widget: user widget style 1 -->
+            <div class="box box-widget widget-user">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header bg-aqua-gradient">
+                    <h3 class="widget-user-username">Magazine</h3>
+                    <h5 class="widget-user-desc">Collection of blogs and news.</h5>
+                    <div class="phpricon">
+                        <i class="fa fa-book"></i>
+                    </div>
+                </div>
+                <div class="widget-user-image">
+                    <img class="img-circle" src="/img/logo200x200txt.png" alt="User Avatar">
+                </div>
+                <div class="box-footer bg-green-gradient">
+                    <div class="row">
+                        <div class="col-sm-4 border-right">
+                            <div class="description-block">
+                                <h5 class="description-header">2</h5>
+                                <span class="description-text">issues</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-4 border-right">
+                            <div class="description-block">
+                                <h5 class="description-header">29</h5>
+                                <span class="description-text">Articles</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-4">
+                            <div class="description-block">
+                                <h5 class="description-header">20/09/2016</h5>
+                                <span class="description-text">Last added</span>
+                            </div>
+                            <!-- /.description-block -->
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 border-right">
+                            <div class="pull-right">
+                                <a href="{{ url('magazine/sep16') }}" style="color:#FFF">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+            <!-- /.widget-user -->
+        </div>
     </div>
     <!-- /.row -->
     <h2>We love Twitter:</h2>
