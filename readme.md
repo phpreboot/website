@@ -11,9 +11,9 @@ PHP Reboot mainly is a PHP developers community in Pune, India.
 With the goal of helping PHP community (mainly in Pune but with online option, everywhere), we have following initiatives:
 
 - PHP magazine (Collection of good and informative blog posts and news) in the form of magazine.
-- PHP conference in India. Under planning, will be updated soon on [phpreboot.com](phpreboot.com)
+- PHP conference in India. Under planning, will be updated soon on [phpreboot.com](http://phpreboot.com)
 - Support and initiate PHP user group culture in other Indian cities.
-- Meet-up in Pune, India. PHPReboot started in early 2014 as local meet-up group. Since then, we are conducting regular local meet-ups. [Learn more & RSVP](meetup.com/phpreboot)
+- Meet-up in Pune, India. PHPReboot started in early 2014 as local meet-up group. Since then, we are conducting regular local meet-ups. [Learn more & RSVP](https://meetup.com/phpreboot)
 
 ## This repository
 
@@ -69,7 +69,7 @@ If you are willing to contribute (just few minutes/hours a week), there are mult
   - **Sending Pull request** is better way. Clone project, and use article generator `php artisan article:generate` to generate article JSON. Send us pull request with generated JSON file(s). Read [contribution guide](contribution-guide.md) for more details.
 - **Contribute to phpreboot.com site**: We have many new features to develop (& obviously bugs). You can:
   - **Report issue/Suggest feature**: Create github issue to tell us how to make site better. It could be a bug, UI fix, text/typo fix or whole new feature request. Just try to make sure reported issues are not duplicate.
-  - **Fix issues**: There are many reported issues; both minor bug fix & major feature request. PHP reboot is made using Laravel 5.1. If you know Laravel 5, you may help us by fixing few issues. Check [waffle.io](waffle.io/phpreboot/website) to see current issues and their status. Read [contribution guide](contribution-guide.md) for details.
+  - **Fix issues**: There are many reported issues; both minor bug fix & major feature request. PHP reboot is made using Laravel 5.1. If you know Laravel 5, you may help us by fixing few issues. Check [waffle.io](https://waffle.io/phpreboot/website) to see current issues and their status. Read [contribution guide](contribution-guide.md) for details.
     - Hey even if you do not know laravel (but know php), this is good chance to learn laravel. I personally made this site to learn laravel :D. Just read Laravel docs and review code, its very easy. Benefit:
       - You will learn laravel
       - You will learn coding best practices (Even if I reject PR, I'll give proper explanation and also how to improve)
