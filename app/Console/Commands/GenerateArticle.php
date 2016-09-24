@@ -163,6 +163,8 @@ class GenerateArticle extends Command
 
     /**
      * @param string $websiteDomain
+     *
+     * @return string
      */
     protected function getNewWebsite($websiteDomain)
     {
@@ -170,7 +172,7 @@ class GenerateArticle extends Command
         $websiteArray['name'] = $this->ask("What is suitable name of the website. (Ideally name should uniquely identify website.)");
         $websiteArray['site_url'] = $websiteDomain;
 
-        if ($this->confirm("It there and RSS feed of the website? (And you know that) y|N")) {
+        if ($this->confirm("Is there and RSS feed of the website? (And you know that) y|N")) {
             $websiteArray['feed_url'] = $this->ask("Enter feed_url.");
         } else {
             $websiteArray['feed_url'] = "";
@@ -180,7 +182,10 @@ class GenerateArticle extends Command
     }
 
     /**
+     * @param object $websites
      * @param string $websiteDomain
+     *
+     * @return string
      */
     protected function getExistingWebsite($websites, $websiteDomain)
     {
