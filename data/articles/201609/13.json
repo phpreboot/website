@@ -1,0 +1,22 @@
+{
+    "author": {
+        "name": "Rafie Younes",
+        "twitter": "RAFIEYounes"
+    },
+    "website": {
+        "id": "4",
+        "name": "SitePoint",
+        "site_url": "sitepoint.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "9",
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/www.sitepoint.com\/mail-logging-in-laravel-5-3-extending-the-mail-driver",
+    "title": "Mail Logging in Laravel 5.3: Extending the Mail Driver",
+    "published_at": "2016-09-23",
+    "description": "On Sitepoint, Younes is explaining how to extend Mail driver in laravel 5.3 and do the mail logging.",
+    "json_file_name": "201609\/13.json"
+}

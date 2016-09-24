@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Alan Storm",
+        "id": "12",
+        "twitter": "alanstorm"
+    },
+    "website": {
+        "id": "11",
+        "name": "Alanstorm.com",
+        "site_url": "alanstorm.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "11",
+        "name": "Magento",
+        "description": "Articles related to Magento"
+    },
+    "url": "http:\/\/alanstorm.com\/magento_2_simplest_xsd_valid_ui_component",
+    "title": "Magento 2: Simplest XSD Valid UI Component",
+    "published_at": "2016-09-21",
+    "description": "On his site, Alan Storm posted new article in Magento 2 series - Simplest XSD valid UI component.",
+    "json_file_name": "201609\/14.json"
+}
