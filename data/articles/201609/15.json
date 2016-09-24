@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Tom McFarlin",
+        "twitter": "tommcfarlin"
+    },
+    "website": {
+        "name": "Tutsplus",
+        "site_url": "tutsplus.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "20",
+        "name": "Wordpress",
+        "description": "Articles related to Wordpress"
+    },
+    "url": "https:\/\/code.tutsplus.com\/series\/creating-custom-wordpress-administration-pages--cms-1062",
+    "title": "Creating Custom WordPress Administration Pages",
+    "published_at": "2016-09-22",
+    "description": "On Tutsplus, Tom McFarlin is posting a series about making custom wordpress administrator pages. There are 3 articles so far on 2nd, 8th and 22nd September.",
+    "json_file_name": "201609\/15.json"
+}
