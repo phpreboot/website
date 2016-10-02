@@ -1,0 +1,22 @@
+{
+    "author": {
+        "name": "Chris Sevilleja",
+        "twitter": "sevilayha"
+    },
+    "website": {
+        "id": 1,
+        "name": "Scotch IO",
+        "site_url": "scotch.io",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 9,
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/scotch.io\/tutorials\/automatically-format-laravel-database-fields-with-accessors-and-mutators",
+    "title": "Automatically Format Laravel Database Fields with Accessors and Mutators",
+    "published_at": "2015-05-10",
+    "description": "In Scotch.io, Chris Sevilleja explains laravel accessors and mutators and how to use it.",
+    "json_file_name": "201610\/1.json"
+}
