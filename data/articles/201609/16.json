@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Jani Hartikainen",
+        "twitter": "jhartikainen"
+    },
+    "website": {
+        "name": "Codeutopia",
+        "site_url": "codeutopia.net",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 1,
+        "name": "Architecture",
+        "description": "Articles discussing about system architecture in general and not associated with any framework\/CMS."
+    },
+    "url": "http:\/\/codeutopia.net\/blog\/2016\/09\/25\/javascript-stumbling-blocks-staircase-code",
+    "title": "Short functions considered harmful: Staircase code",
+    "published_at": "2016-09-25",
+    "description": "On his site, Jani Hartikainen published an article describing why staircase code is bad and how to deal with it. His examples are in javascript but easy to follow for PHP developers.",
+    "json_file_name": "201609\/16.json"
+}

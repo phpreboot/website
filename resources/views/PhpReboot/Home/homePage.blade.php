@@ -23,7 +23,7 @@
                     <div class="row">
                         <div class="col-sm-4 border-right">
                             <div class="description-block">
-                                <h5 class="description-header">295</h5>
+                                <h5 class="description-header">297</h5>
                                 <span class="description-text">Members</span>
                             </div>
                             <!-- /.description-block -->
@@ -123,7 +123,7 @@
                         <!-- /.col -->
                         <div class="col-sm-4 border-right">
                             <div class="description-block">
-                                <h5 class="description-header">29</h5>
+                                <h5 class="description-header">32</h5>
                                 <span class="description-text">Articles</span>
                             </div>
                             <!-- /.description-block -->
@@ -131,7 +131,7 @@
                         <!-- /.col -->
                         <div class="col-sm-4">
                             <div class="description-block">
-                                <h5 class="description-header">20/09/2016</h5>
+                                <h5 class="description-header">23/09/2016</h5>
                                 <span class="description-text">Last added</span>
                             </div>
                             <!-- /.description-block -->
