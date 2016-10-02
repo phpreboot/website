@@ -2,30 +2,30 @@
 
 Thanks for deciding to contribute.
 
-If you wish to send PR for adding articles or fixing issues, you need to first setup project locally. However, it is also important to understand our workflow so that your hard work is not wasted with rejected PR.
+If you wish to send PR for adding articles or fixing issues, you need to first setup project locally. However, it is also important to understand our workflow so that your hard work is not wasted in a rejected PR.
 
 ## Workflow
 
 We follow gitflow workflow.
 
-However please understand, starting September 2016, there will be no direct push to main repository `github.com/phpreboot/website`. All the changes will come through PR, regardless of change type. (Only kapilshamra have commit right but rule will apply on him as well)
+However, starting from September 2016, there will be no direct push to main repository `github.com/phpreboot/website`. All the changes will come through PR, regardless of change type. (Only kapilsharma have commit right but rule will apply on him as well)
 
-So first step of contribution is to fork the project on github. With fork, you will have different project like `github.com/<your-name>/website`. Now checkout with your fork.
+So first step of contribution is to fork the project on github, and then, you will have a different project like `github.com/<your-name>/website`. Now checkout it.
 
 ## Prerequisite
 
 Obviously, a computer. :D Kidding.
 
-Your system must have following:
+Your system must have:
 
 - Git (mandatory)
 - PHP (mandatory)
 - Composer (mandatory)
-- Vagrant & Virtual box (recommended, we use scotch box so you can simply do `vagrant up`.)
+- Vagrant & Virtual box (recommended, we use scotch box so you can simply do `vagrant up` inside your local `website` folder.)
 
 ## Setting project locally
 
-### Checkout with your fork.
+### Checkout your fork.
 
 ```bash
 git clone https://github.com/<your-name>/website
@@ -35,7 +35,7 @@ Please replace `<your-name>` with your github user name.
 
 ### Copy .env
 
-We need to make copy of `.env.example` as `.env`
+We need to make a copy of `.env.example` as `.env`
 
 ```bash
 cd website
@@ -44,11 +44,12 @@ cp .env.example .env
 
 After that, edit `.env` file with database settings. You need to create empty database. If you are using `scotchbox`, you do not need to change anything right now.
 
-However if you are using local LAMP setup or WAMP/MAMP/XAMPP etc, create empty database and update .env file.
+However, if you are using local LAMP setup or WAMP/MAMP/XAMPP etc, create empty database and update .env file.
 
 ### Composer install
 
-We use composer to install all the dependencies. Run following command to setup all dependencies. (Prerequisite, composer installed. If you are using scotchbox, its available through `vagrant ssh`.)
+(Prerequisite, composer installed. If you are using scotchbox, its available through `vagrant ssh`.)
+We use composer to install all dependencies, running the following command: 
 
 ```bash
 composer install
@@ -56,7 +57,7 @@ composer install
 
 ### Generating keys
 
-Laravel use unique key for its internal encrytion feature. We need to generate a unique key, which can be done with following command.
+Laravel use an unique key for its internal encryption feature and we need to generate it, by running the following command:
 
 ```bash
 php artisan key:generate
@@ -64,10 +65,10 @@ php artisan key:generate
 
 ### Database migration and seeding
 
-We use database migration to create database structure and seeding to insert initial categories. Run following commands
+We use database migration to create database structure and seeding it to insert initial categories. Run following commands:
 
 ```bash
-composer dump autoload
+composer dump-autoload
 php artisan migrate
 php artisan db:seed
 ```
@@ -76,9 +77,9 @@ php artisan db:seed
 
 PHP reboot save all articles in database for current and future optimization purpose. (If in future we have higher traffic and better hosting options, we may move to Solr or NoSQL or another RDBMS.)
 
-However we also depends on contribution from community. Contribution is not possible without local setup and keeping updated copy of database to distribute is also not possible.
+However we also depends on contribution from community. Contribution is not possible without local setup and keeping an updated copy of database to distribute is also not possible.
 
-Thus we worked on article JSON files, which can be committed to git and can be used to generate whole database.
+Thus, we worked on article JSON files, which can be committed to git and can be used to generate whole database.
 
 However, current artisan command can import one file at a time. A github issue is already created to import all files with one command but until that issue is solved, we need to import files one by one.
 
@@ -88,7 +89,7 @@ Command to import is `php artisan article:import yyyymm-x`. Thus, to import `1.j
 
 Import enough articles locally to have local website ready.
 
-Congratulation, your local website is up and running. What will you contribute now?
+Congratulations, your local website is up and running. What will you contribute now?
 
 ## Contribution
 
@@ -99,10 +100,11 @@ Once local site is ready, you can start contributing. There is one more setting 
 Some key terms:
 
 - PHP Reboot repo: Main repository of PHP reboot https://github.com/phpreboot/website
-- Fork: Repository you make through form https://github.com/<your-name>/website.
+- fork: Repository you make through form https://github.com/<your-name>/website.
 - remote: Git specific term to represent different repository.
-- origin: Default remote of git. On your checkout, it will represent Fork.
+- origin: Default remote of git. On your checkout, it will represent your fork.
 - upstream: Suggested remote name for PHP Reboot Repo.
+- PR (pull request): It's you asking the PHP Reboot Repo to review and accept/reject your modifications.
 
 In git, remotes represents repository. With clone of your fork, you get your first remote as `origin`, which points to your github repository. You can check it with command `git remote -v`.
 
@@ -124,7 +126,7 @@ All articles are pushed to master branch of PHPReboot, but locally, we recommend
 git checkout -b articles
 ```
 
-Not to generate JSON file for an article, run command `php artisan article:generate`. It will ask few questions. Read questions carefully and answer correctly. Once successfully executed, it will generate json file under `data/articles/yyyymm` folder.
+Not to generate a JSON file for an article, run command `php artisan article:generate`. It will ask few questions. Read questions carefully and answer correctly. Once successfully executed, it will generate json file under `data/articles/yyyymm` folder.
 
 Import generated file with command `php artisan article import yyyymm-x` and visit imported page locally to check file is correctly generated. Once satisfied, push new json file
 
@@ -138,7 +140,7 @@ Once pushed to fork, go to github and create a pull request.
 
 **Adding further articles**
 
-If you are adding new articles after few days, you first need to update. Run following commands
+If you are adding new articles after few days, you first need to update. Run following commands:
 
 ```bash
 git checkout master
