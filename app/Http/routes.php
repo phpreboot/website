@@ -29,10 +29,12 @@ Route::get('/meetup', [
 Route::get('/magazine/{shortName}', 'PhpReboot\Magazine\MagazineController@monthPage');
 Route::get('/magazine/article/{articleId}', 'PhpReboot\Magazine\MagazineController@articleDetails');
 
-// Favourites
-Route::get('/user/favourite/add/{articleId}', 'PhpReboot\Magazine\FavouriteController@addToFavourite');
-Route::get('/user/favourite/remove/{articleId}', 'PhpReboot\Magazine\FavouriteController@removeFromFavourite');
-Route::get('/user/favourite', 'PhpReboot\Magazine\FavouriteController@getFavourite');
+Route::group(['middleware' => ['auth']], function()
+{
+	Route::get('/user/favourite/add/{articleId}', 'PhpReboot\Magazine\FavouriteController@addToFavourite');
+	Route::get('/user/favourite/remove/{articleId}', 'PhpReboot\Magazine\FavouriteController@removeFromFavourite');
+	Route::get('/user/favourite', 'PhpReboot\Magazine\FavouriteController@getFavourite');
+});
 
 /*
 |--------------------------------------------------------------------------
