@@ -170,7 +170,6 @@
                         $("#toggle-favourite").html("Add to favourite");
                     }else{
                         if(r.message == "Not authorized"){
-                            console.log('Nao autorizado');
                             $("#myModal").modal();
                         }
                     }
@@ -185,7 +184,6 @@
                         $("#toggle-favourite").html("Remove from favourite");
                     }else{
                         if(r.message == "Not authorized"){
-                            console.log('Nao autorizado');
                             $("#myModal").modal();
                         }
                     }
