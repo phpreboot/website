@@ -28,11 +28,6 @@ class FavouriteController extends Controller
      */
     public function getFavourite()
     {
-        // Redirect, if user is not authenticated.
-        if (!Auth::check()){
-            return redirect('/auth/login');
-        }
-
         $favoriteArticles = $this->favoriteService->getFavouriteArticles(Auth::user()->id);
 
         $viewData = [
@@ -47,10 +42,6 @@ class FavouriteController extends Controller
 
     public function addToFavourite($articleId)
     {
-        if (!Auth::check()){
-            return response()->json(["result" => false, "message" => "Not authorized"]);
-        }
-
         if ($this->favoriteService->addToFavourite(Auth::user()->id, $articleId)) {
             return response()->json(["result" => true]);
         } else {
@@ -60,10 +51,6 @@ class FavouriteController extends Controller
 
     public function removeFromFavourite($articleId)
     {
-        if (!Auth::check()){
-            return response()->json(["result" => false, "message" => "Not authorized"]);
-        }
-
         if ($this->favoriteService->removeFromFavourite(Auth::user()->id, $articleId)) {
             return response()->json(["result" => true]);
         } else {

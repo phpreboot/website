@@ -35,8 +35,9 @@ class Authenticate
     public function handle($request, Closure $next)
     {
         if ($this->auth->guest()) {
+            
             if ($request->ajax()) {
-                return response('Unauthorized.', 401);
+                return response()->json(["result" => false, "message" => "Not authorized"]);
             } else {
                 return redirect()->guest('auth/login');
             }
