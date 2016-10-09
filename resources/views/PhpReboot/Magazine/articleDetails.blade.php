@@ -76,11 +76,18 @@
                             <a href="#" data-toggle="modal" data-target="#myModal">
                                 Add to favorite (login needed)
                             </a>
+                        @else
+                            @if (isset($isFavourite) && $isFavourite)
+                                <a href="#" id="toggle-favourite">Remove from favourite</a>
+                            @else
+                                <a href="#" id="toggle-favourite">Add to favourite</a>
+                            @endif
+                        @endif
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         <h4 class="modal-title" id="myModalLabel">Please login</h4>
@@ -93,16 +100,9 @@
                                         <a href="{{ url('auth/login') }}" type="button" class="btn btn-primary">Login</a>
                                         <a href="{{ url('auth/register') }}" type="button" class="btn btn-primary">Sign up</a>
                                     </div>
-                                    </div>
                                 </div>
                             </div>
-                        @else
-                            @if (isset($isFavourite) && $isFavourite)
-                                <a href="#" id="toggle-favourite">Remove from favourite</a>
-                            @else
-                                <a href="#" id="toggle-favourite">Add to favourite</a>
-                            @endif
-                        @endif
+                        </div>
                     </p>
                 </div>
             </div>
@@ -155,22 +155,44 @@
 @endsection
 
 @section('pagescript')
+
     $(document).ready(function() {
+
         $("#toggle-favourite").click(function(e) {
+            
             e.preventDefault();
+            
             if($("#toggle-favourite").html() == "Remove from favourite") {
+                
                 $.get( "{{ url('user/favourite/remove', [ $article->id ]) }}", function( r ) {
+
                     if (r.result) {
                         $("#toggle-favourite").html("Add to favourite");
+                    }else{
+                        if(r.message == "Not authorized"){
+                            console.log('Nao autorizado');
+                            $("#myModal").modal();
+                        }
                     }
+
                 });
+
             } else {
+                
                 $.get( "{{ url('user/favourite/add', [ $article->id ]) }}", function( r ) {
+
                     if (r.result) {
                         $("#toggle-favourite").html("Remove from favourite");
+                    }else{
+                        if(r.message == "Not authorized"){
+                            console.log('Nao autorizado');
+                            $("#myModal").modal();
+                        }
                     }
+
                 });
             }
         });
     })
+    
 @endsection
