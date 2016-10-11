@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Claudio Ribeiro",
+        "id": "17",
+        "twitter": "ClauASRibeiro"
+    },
+    "website": {
+        "id": "4",
+        "name": "SitePoint",
+        "site_url": "sitepoint.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "13",
+        "name": "PHP-General",
+        "description": "Article important about PHP but are not related to any framework or other defined category"
+    },
+    "url": "https:\/\/www.sitepoint.com\/quick-intro-phpcompatibility-standard-for-phpcs-are-you-php7-ready\/",
+    "title": "Quick Intro: PhpCompatibility for PHPCS \u2013 Are You PHP7 Ready?",
+    "published_at": "2016-09-26",
+    "description": "On sitepoint, Claudio posted a tutorial on how to use PHP code sniffer & PHPCompatibility to ensure your application is PHP 7 ready.",
+    "json_file_name": "201609\/17.json"
+}
