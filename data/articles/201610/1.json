@@ -1,0 +1,22 @@
+{
+    "author": {
+        "name": "Viraj Khatavkar",
+        "twitter": "virajkhatavkar"
+    },
+    "website": {
+        "id": "4",
+        "name": "SitePoint",
+        "site_url": "sitepoint.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "10",
+        "name": "Library",
+        "description": "Article about some common third-party library"
+    },
+    "url": "https:\/\/www.sitepoint.com\/phpseclib-securely-communicating-with-remote-servers-via-php\/",
+    "title": "Phpseclib: Securely Communicating with Remote Servers via PHP",
+    "published_at": "2016-10-03",
+    "description": "On Sitepoint, Viraj Khatavkar posted a quick tutorial on how to use Phpseclib (PHP Secure Communications Library) to securely connect with remote server using PHP.",
+    "json_file_name": "201610\/1.json"
+}

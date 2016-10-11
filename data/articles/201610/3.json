@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Deji Akala",
+        "id": "28",
+        "twitter": "dejiakala"
+    },
+    "website": {
+        "id": "4",
+        "name": "SitePoint",
+        "site_url": "sitepoint.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "13",
+        "name": "PHP-General",
+        "description": "Article important about PHP but are not related to any framework or other defined category"
+    },
+    "url": "https:\/\/www.sitepoint.com\/from-http-messages-to-psr-7-whats-it-all-about",
+    "title": "From HTTP Messages to PSR-7: What\u2019s It All About?",
+    "published_at": "2016-10-05",
+    "description": "On Sitepoint, Deji Akala posted an article explaining PSR-7. He started with quick introduction of HTTP Message, and then what PSR-7 is?",
+    "json_file_name": "201610\/3.json"
+}

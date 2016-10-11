@@ -9,3 +9,5 @@ Homestead.json
 /reports/phpmetrics
 .vagrant
 .DS_Store
+
+tweets.txt
