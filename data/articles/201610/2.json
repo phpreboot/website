@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Eric Barnes",
+        "id": "15",
+        "twitter": "ericlbarnes"
+    },
+    "website": {
+        "id": "5",
+        "name": "Laravel news",
+        "site_url": "laravel-news.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "9",
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/laravel-news.com\/2016\/10\/laracon-eu-videos\/",
+    "title": "20 Talk Videos from Laracon EU are now live and available",
+    "published_at": "2016-10-07",
+    "description": "On laravel-news.com, Eric posted much awaited news, Laracon-EU videos are now officially available on youtube. Follow the mink on laravel-news & let great learning begin.",
+    "json_file_name": "201610\/2.json"
+}
