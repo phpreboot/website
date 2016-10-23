@@ -1,0 +1,21 @@
+{
+    "author": {
+        "name": "Mattias Geniar",
+        "twitter": "mattiasgeniar"
+    },
+    "website": {
+        "name": "mattias.be",
+        "site_url": "ma.ttias.be",
+        "feed_url": "https:\/\/ma.ttias.be\/feed\/"
+    },
+    "category": {
+        "id": 19,
+        "name": "Tools",
+        "description": "Articles discussing some web development tools"
+    },
+    "url": "https:\/\/ma.ttias.be\/varnish-explained\/",
+    "title": "Varnish Explained",
+    "published_at": "2016-10-20",
+    "description": "On his blog, Mattias posted details about his talk at Laracon EU 2016. He posted presentation video, slides and if you can't watch video, little write-up about every slide. Must read article if you are working with Varnish.",
+    "json_file_name": "201610\/9.json"
+}

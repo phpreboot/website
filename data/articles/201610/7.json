@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Alan Storm",
+        "id": 12,
+        "twitter": "alanstorm"
+    },
+    "website": {
+        "id": 11,
+        "name": "Alanstorm.com",
+        "site_url": "alanstorm.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 11,
+        "name": "Magento",
+        "description": "Articles related to Magento"
+    },
+    "url": "http:\/\/alanstorm.com\/magento_2_uiclass_data_features\/",
+    "title": "Magento 2: uiClass Data Features",
+    "published_at": "2016-10-03",
+    "description": "Alan Storm posted new article in Magento 2 series - uiClass Data Feature. This is however an extension of previous article and this article is not specific to Magento.",
+    "json_file_name": "201610\/7.json"
+}

@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Tom McFarlin",
+        "id": "26",
+        "twitter": "tommcfarlin"
+    },
+    "website": {
+        "id": "20",
+        "name": "Tutsplus",
+        "site_url": "tutsplus.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "20",
+        "name": "Wordpress",
+        "description": "Articles related to Wordpress"
+    },
+    "url": "https:\/\/code.tutsplus.com\/series\/using-namespaces-and-autoloading-in-wordpress-plugins--cms-1071",
+    "title": "Using Namespaces and Autoloading in WordPress Plugins",
+    "published_at": "2016-10-20",
+    "description": "On tutsplus, Tom McFarlin started new series explaining how to use Namespace and Autoloading in wordpress plugins.",
+    "json_file_name": "201610\/5.json"
+}
