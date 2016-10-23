@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Matt Stauffer",
+        "id": "10",
+        "twitter": "stauffermatt"
+    },
+    "website": {
+        "id": "9",
+        "name": "mattstauffer",
+        "site_url": "mattstauffer.co",
+        "feed_url": ""
+    },
+    "category": {
+        "id": "9",
+        "name": "Laravel",
+        "description": "Articles related to Laravel framework"
+    },
+    "url": "https:\/\/mattstauffer.co\/blog\/the-new-notification-system-in-laravel-5-3",
+    "title": "The new Notification system in Laravel 5.3",
+    "published_at": "2016-10-19",
+    "description": "Matt Stauffer, on his personal blog, is posting a series of articles\/tutorials about new features on Laravel 5.3. In the latest post, he is explaining about 'The new notification system in Laravel 5.3'. This is a must read series of any Laravel developer.",
+    "json_file_name": "201610\/4.json"
+}
