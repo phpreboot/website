@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Alan Storm",
+        "id": 12,
+        "twitter": "alanstorm"
+    },
+    "website": {
+        "id": 11,
+        "name": "Alanstorm.com",
+        "site_url": "alanstorm.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 11,
+        "name": "Magento",
+        "description": "Articles related to Magento"
+    },
+    "url": "http:\/\/alanstorm.com\/magento-2-ui-component-data-sources\/",
+    "title": "Magento 2: UI Component Data Sources",
+    "published_at": "2016-10-16",
+    "description": "Alan Storm posted new article in his Magento 2 series - UI Component Ddata source.",
+    "json_file_name": "201610\/8.json"
+}
