@@ -1,0 +1,23 @@
+{
+    "author": {
+        "name": "Alan Storm",
+        "id": 12,
+        "twitter": "alanstorm"
+    },
+    "website": {
+        "id": 11,
+        "name": "Alanstorm.com",
+        "site_url": "alanstorm.com",
+        "feed_url": ""
+    },
+    "category": {
+        "id": 11,
+        "name": "Magento",
+        "description": "Articles related to Magento"
+    },
+    "url": "http:\/\/alanstorm.com\/magento_2_ec6_template_literals\/",
+    "title": "Magento 2: ES6 Template Literals",
+    "published_at": "2016-10-01",
+    "description": "On his blog, Alan posted new Magento 2 article. This time he is explaining ES template Literals in Magento 2. He started with basics like what is ES6, & Template Literals and then how use them in Magento 2.",
+    "json_file_name": "201610\/6.json"
+}
