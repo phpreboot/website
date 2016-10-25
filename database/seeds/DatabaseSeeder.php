@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
 
         //$this->call(MagazineTableSeeder::class);
         $this->call(CategoryTableSeeder::class);
+        $this->call(October16NewCategoryTableSeeder::class);
         //$this->call(August16ArticleSeeder::class);
 
         Model::reguard();
