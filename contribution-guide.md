@@ -75,9 +75,9 @@ php artisan db:seed
 
 ### Importing articles
 
-PHP reboot save all articles in database for current and future optimization purpose. (If in future we have higher traffic and better hosting options, we may move to Solr or NoSQL or another RDBMS.)
+PHP reboot saves all articles in the database for current and future optimization purpose. (If in future we have higher traffic and better hosting options, we may move to Solr or NoSQL or another RDBMS.)
 
-However we also depends on contribution from community. Contribution is not possible without local setup and keeping an updated copy of database to distribute is also not possible.
+However, we also depend on contributions from the community. Contributions are not possible without local setup and keeping an updated copy of database to distribute is also not possible.
 
 Thus, we worked on article JSON files, which can be committed to git and can be used to generate whole database.
 
@@ -126,7 +126,7 @@ All articles are pushed to master branch of PHPReboot, but locally, we recommend
 git checkout -b articles
 ```
 
-Not to generate a JSON file for an article, run command `php artisan article:generate`. It will ask few questions. Read questions carefully and answer correctly. Once successfully executed, it will generate json file under `data/articles/yyyymm` folder.
+Now to generate a JSON file for an article, run command `php artisan article:generate`. It will ask few questions. Read questions carefully and answer correctly. Once successfully executed, it will generate a json file under `data/articles/yyyymm` folder.
 
 Import generated file with command `php artisan article import yyyymm-x` and visit imported page locally to check file is correctly generated. Once satisfied, push new json file
 
