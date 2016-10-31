@@ -26,7 +26,7 @@
                     <div class="box-body">
                         <!-- email -->
                         <div class="form-group">
-                            <label>Email:</label>
+                            {!! Form::label('email','Email:') !!}
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-at"></i>
@@ -38,7 +38,7 @@
                         <!-- /.form group -->
                         <!-- password -->
                         <div class="form-group">
-                            <label>Password:</label>
+                            {!! Form::label('password','Password:') !!}
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
@@ -61,10 +61,10 @@
                     </div>
                     <div class="box-footer">
                         <div class="pull-left">
-                            Not having account? <a href="/auth/register">Sign up</a>.
+                            Not having account? <a href="{{url('/auth/register')}}">Sign up</a>.
                         </div>
                         <div class="pull-right">
-                            <button type="submit" class="btn btn-info">sign in</button>
+                            <button type="submit" class="btn btn-info">Sign in</button>
                         </div>
                     </div>
                 {!! Form::close() !!}
