@@ -43,7 +43,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                {!! Form::password('password',null,['id'=>'password','class'=>'form-control','placeholder'=>'password']) !!}
+                                {!! Form::password('password',['id'=>'password','class'=>'form-control','placeholder'=>'password']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
