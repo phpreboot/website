@@ -33,7 +33,7 @@ class ArticleService {
 
             $categories[$categoryName][] = $article;
         }
-
+        $articles = $articles->sortByDesc('created_at');
         // For now, simply sorting categories alphabetically.
         ksort($categories);
 
