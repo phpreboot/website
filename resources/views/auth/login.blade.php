@@ -31,8 +31,8 @@
                                             aria-hidden="true">&times;</button>
                                     <i class="icon fa fa-ban"></i>{{ $error }}
                                 </div>
-                        @endforeach
-                    @endif
+                            @endforeach
+                        @endif
                         <!-- email -->
                         <div class="form-group">
                             {!! Form::label('email','Email:') !!}
