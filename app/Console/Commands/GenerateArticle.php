@@ -207,7 +207,8 @@ class GenerateArticle extends Command
     protected function collectAuthorInfo()
     {
         $enteredAuthorName = $this->ask("Enter author name?");
-        $enteredAuthorTwitter = $this->ask("Enter author's twitter handle (without '@').");
+        $enteredAuthorTwitter = $this->ask("Enter author's twitter handle (without '@').", false);
+        $enteredAuthorTwitter = $enteredAuthorTwitter == false ? null : $enteredAuthorTwitter;
 
         $authorArray = [
             "name" => $enteredAuthorName
