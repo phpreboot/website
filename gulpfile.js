@@ -12,7 +12,13 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.scripts([
+    mix.styles([
+        'bootstrap-3.3.6/bootstrap.min.css',
+        'font-awesome/font-awesome.min.css',
+        'ionicons/ionicons.min.css',
+        'adminLTE-2.3.4/AdminLTE.min.css',
+        'adminLTE-2.3.4/skins/skin-green.min.css',
+    ]).scripts([
         'html5shiv/html5shiv.min.js',
         'respond/respond.min.js',
         'jQuery/jquery-2.2.3.min.js',
@@ -20,13 +26,5 @@ elixir(function(mix) {
         'bootstrap-3.3.6/bootstrap.min.js',
         'adminLTE-2.3.4/app.min.js',
     ])
-    mix.version(['js/all.js']);
-    mix.styles([
-        'bootstrap-3.3.6/bootstrap.min.css',
-        'font-awesome/font-awesome.min.css',
-        'ionicons/ionicons.min.css',
-        'adminLTE-2.3.4/AdminLTE.min.css',
-        'adminLTE-2.3.4/skins/skin-green.min.css',
-    ]);
-    mix.version(['css/all.css']);
+    mix.version(['css/all.css','js/all.js']);
 });
