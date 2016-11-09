@@ -21,4 +21,12 @@ elixir(function(mix) {
         'adminLTE-2.3.4/app.min.js',
     ])
     mix.version(['js/all.js']);
+    mix.styles([
+        'bootstrap-3.3.6/bootstrap.min.css',
+        'font-awesome/font-awesome.min.css',
+        'ionicons/ionicons.min.css',
+        'adminLTE-2.3.4/AdminLTE.min.css',
+        'adminLTE-2.3.4/skins/skin-green.min.css',
+    ]);
+    mix.version(['css/all.css']);
 });
