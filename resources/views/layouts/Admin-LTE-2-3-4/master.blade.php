@@ -25,12 +25,8 @@
     <link rel="stylesheet" href="/adminLTE-2.3.4/css/skins/skin-green.min.css">
     <!-- Left few CSS from AdminLTE. Need to include as and when needed. -->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="{{ elixir("js/all.js") }}"></script>
+
 </head>
 <body class="hold-transition skin-green sidebar-mini sidebar-collapse">
     <div class="wrapper">
@@ -62,19 +58,11 @@
     </div>
 
     <!-- Footer scripts. Need to check how to make it dynamic. -->
-    <!-- jQuery 2.2.3 -->
-    <script src="/js/jQuery/jquery-2.2.3.min.js"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button);
     </script>
-    <!-- Bootstrap 3.3.6 -->
-    <script src="/bootstrap-3.3.6/js/bootstrap.min.js"></script>
-
-    <!-- AdminLTE App -->
-    <script src="/adminLTE-2.3.4/js/app.min.js"></script>
 
     @if (env('APP_ENV') === "production")
         <!-- Google analytics -->
