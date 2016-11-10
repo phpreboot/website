@@ -1,0 +1,28 @@
+This is the approval status of authors, after asking them on twitter.
+
+author - website - status - reply
+alanstorm - alanstorm.com - remove - Please remove my articles from my your site immediately. You do not have permission to use them.
+Babatoclean1 - - default
+beausimensen - - default
+ClauASRibeiro - - default
+dejiakala - - default
+DevDiaa - - default
+eminetto - - default
+ericlbarnes - - default
+freekmurze - - default
+javiereguiluz - - default
+jhartikainen - codeutopia.net - iframe - site OK, pdf discuss - https://twitter.com/jhartikainen/status/790542754812133376
+JoePFerguson - - default
+mattiasgeniar - ma.ttias.be - iframe - https://twitter.com/mattiasgeniar/status/790446042395381760
+pascal_martin - - default
+PercyMamedy - - default
+RAFIEYounes - - default
+settermjd - - default
+stauffermatt - - default
+tommcfarlin - - default
+virajkhatavkar - default
+
+Multiple - sitepoint.com - link - https://twitter.com/sitepointdotcom/status/790733549737345024
+
+@alanstorm @Babatoclean1 @beausimensen
+Pls chk http://phpreboot.com/magazine/oct16 having your articles-its open source. Also planning pdf version may I
