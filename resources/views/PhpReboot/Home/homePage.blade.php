@@ -115,7 +115,7 @@
                     <div class="row">
                         <div class="col-sm-4 border-right">
                             <div class="description-block">
-                                <h5 class="description-header">2</h5>
+                                <h5 class="description-header">@if(isset($totalMagazine)) {{$totalMagazine}} @endif</h5>
                                 <span class="description-text">issues</span>
                             </div>
                             <!-- /.description-block -->
@@ -123,7 +123,7 @@
                         <!-- /.col -->
                         <div class="col-sm-4 border-right">
                             <div class="description-block">
-                                <h5 class="description-header">32</h5>
+                                <h5 class="description-header">@if(isset($articlesCount)) {{$articlesCount}} @endif</h5>
                                 <span class="description-text">Articles</span>
                             </div>
                             <!-- /.description-block -->
@@ -131,7 +131,7 @@
                         <!-- /.col -->
                         <div class="col-sm-4">
                             <div class="description-block">
-                                <h5 class="description-header">23/09/2016</h5>
+                                <h5 class="description-header">@if(isset($lastArticleDate)) {{$lastArticleDate}} @endif</h5>
                                 <span class="description-text">Last added</span>
                             </div>
                             <!-- /.description-block -->

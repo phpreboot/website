@@ -6,4 +6,6 @@ interface ArticleRepositoryInterface
     public function find();
     public function findOne($id);
     public function findBy($name, $value);
+    public function getArticleCount();
+    public function getLatestArticle();
 }

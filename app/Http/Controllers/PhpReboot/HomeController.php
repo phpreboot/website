@@ -4,6 +4,7 @@ namespace App\Http\Controllers\PhpReboot;
 
 //use App\User;
 use App\Http\Controllers\Controller;
+use App\Services\ArticleService;
 
 class HomeController extends Controller
 {
@@ -12,8 +13,24 @@ class HomeController extends Controller
      *
      * @return Response
      */
-    public function homePage()
+    public function homePage(ArticleService $articleService)
     {
-        return view('PhpReboot.Home.homePage', ['menu' => 'home']);
+        //Number of Articles
+        $articlesCount = $articleService->getArticleCount();
+        
+        //Last Article Date
+        $latestArticle = $articleService->getLatestArticle();
+        $lastArticleDate = $latestArticle->created_at;
+        
+        $lastArticleDate = $lastArticleDate->toFormattedDateString();
+        
+        return view(
+                'PhpReboot.Home.homePage', 
+                [
+                    'menu' => 'home',
+                    'articlesCount' => $articlesCount,
+                    'lastArticleDate' => $lastArticleDate
+                ]
+            );
     }
 }

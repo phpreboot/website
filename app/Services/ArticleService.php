@@ -51,4 +51,12 @@ class ArticleService {
     {
         return $this->articleRepo->findOne($articleId);
     }
+    
+    public function getArticleCount(){
+        return $this->articleRepo->getArticleCount();
+    }
+    
+    public function getLatestArticle(){
+        return $this->articleRepo->getLatestArticle();
+    }
 }
