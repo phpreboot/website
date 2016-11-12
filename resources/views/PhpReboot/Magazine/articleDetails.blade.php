@@ -1,6 +1,6 @@
 @extends('layouts.Admin-LTE-2-3-4.master')
 
-@section('title', 'Meetup')
+@section('title', $article->title)
 
 @section('breadcrumb')
     <ol class="breadcrumb">
@@ -31,7 +31,7 @@
                     <strong><i class="fa fa-user margin-r-5"></i> Author</strong>
                     <p class="text-muted">
                         {{ $article->author->name }}
-                        </br>
+                        <br>
                         {{-- -------------------------------------------------------------------
                           -- We need this check because few authors do not have twitter account.
                           -- -------------------------------------------------------------------

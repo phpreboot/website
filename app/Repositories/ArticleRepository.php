@@ -34,4 +34,12 @@ class ArticleRepository implements ArticleRepositoryInterface
     {
         return $this->article->where($name, $value)->get();
     }
+    
+    public function getArticleCount() {
+        return Article::count();
+    }
+    
+    public function getLatestArticle() {
+        return Article::orderBy('created_at', 'Desc')->first();
+    }
 }

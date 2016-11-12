@@ -1,6 +1,6 @@
 @extends('layouts.Admin-LTE-2-3-4.master')
 
-@section('title', 'Meetup')
+@section('title', $magazine->name . 'magazine')
 
 @section('breadcrumb')
     <ol class="breadcrumb">

@@ -24,6 +24,13 @@ class ArticleService {
         $categories = [];
 
         foreach ($articles as $article) {
+
+            // issue - 161 (Hot-fix)
+            // Can we do iti n better way?
+            if ($article->website->noc == 'remove') {
+                continue;
+            }
+
             $category = $article->category;
             $categoryName = $category->name;
 
@@ -43,5 +50,13 @@ class ArticleService {
     public function getArticle($articleId)
     {
         return $this->articleRepo->findOne($articleId);
+    }
+    
+    public function getArticleCount(){
+        return $this->articleRepo->getArticleCount();
+    }
+    
+    public function getLatestArticle(){
+        return $this->articleRepo->getLatestArticle();
     }
 }

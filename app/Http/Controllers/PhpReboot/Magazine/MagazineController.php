@@ -43,6 +43,12 @@ class MagazineController extends Controller
     {
         $article = $this->articleService->getArticle($articleId);
 
+        // Issue-161. Redirect if article's website do not want's to be listed.
+        // Done in hurry for hot-fix. Can we do it in better way?
+        if ($article->website->noc == 'remove') {
+            return redirect('/');
+        }
+
         $viewData = [
             'article' => $article,
             'menu' => 'magazine',
