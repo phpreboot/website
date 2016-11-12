@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Magazine;
 use App\Models\Article;
 use Cache;
+use App\Services\ArticleService;
 
 class HomeController extends Controller
 {
@@ -15,29 +16,20 @@ class HomeController extends Controller
      *
      * @return Response
      */
-    public function homePage()
+    public function homePage(ArticleService $articleService)
     {
-        $cacheTimeout = 1440;
-        
-        // Number of Magazines | Stores it in the cache
-        $issuesCount = Cache::remember('issueCount', $cacheTimeout, function(){
-           return Magazine::count(); 
-        });
-        
         //Number of Articles
-        $articlesCount = Cache::remember('articlesCount', $cacheTimeout, function(){
-            return Article::count();
-        });
+        $articlesCount = $articleService->getArticleCount();
         
         //Last Article Date
-        $lastArticleDate = Cache::remember('lastArticleDate', $cacheTimeout, function(){
-            $lastArticle = Article::orderBy('published_at', 'Desc')->first();
-            return $lastArticle->published_at;
-        });
+        $latestArticle = $articleService->getLatestArticle();
+        $lastArticleDate = $latestArticle->created_at;
+        
+        $lastArticleDate = $lastArticleDate->toFormattedDateString();
+        
         
         return view('PhpReboot.Home.homePage', [
             'menu' => 'home',
-            'issuesCount' => $issuesCount,
             'articlesCount' => $articlesCount,
             'lastArticleDate' => $lastArticleDate
             ]);

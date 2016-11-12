@@ -98,7 +98,7 @@
         <!-- /.col -->
         <!-- /.col -->
         <div class="col-md-4">
-            <!-- Widget: user widget style 1 -->
+            <!-- Widget: Magzine Badge -->
             <div class="box box-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-aqua-gradient">
@@ -116,7 +116,7 @@
                         <div class="col-sm-4 border-right">
                             <div class="description-block">
                                 <h5 class="description-header">
-                                  @if(isset($issuesCount)){{ $issuesCount }}@endif
+                                  @if(isset($totalMagazine)){{ $totalMagazine }}@endif
                                 </h5>
                                 <span class="description-text">issues</span>
                             </div>
