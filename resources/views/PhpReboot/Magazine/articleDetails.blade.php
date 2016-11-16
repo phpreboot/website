@@ -62,7 +62,7 @@
                     </p>
                     <hr/>
                     <strong>
-                        <i class="fa fa-globe margin-r-5"></i> Categoty
+                        <i class="fa fa-globe margin-r-5"></i> Category
                         <span class="badge bg-aqua-active pull-right">{{ $article->category->name }}</span>
                     </strong>
                     <hr/>
