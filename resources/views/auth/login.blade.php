@@ -24,6 +24,15 @@
                 </div>
                 <form method="POST" action="/auth/login">
                     <div class="box-body">
+                        @if (count($errors) > 0)
+                            @foreach ($errors->all() as $error)
+                                <div class="alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert"
+                                            aria-hidden="true">&times;</button>
+                                    <i class="icon fa fa-ban"></i>{{ $error }}
+                                </div>
+                            @endforeach
+                        @endif
                         {!! csrf_field() !!}
                         <!-- email -->
                         <div class="form-group">
@@ -32,7 +41,8 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-at"></i>
                                 </div>
-                                <input type="text" class="form-control" placeholder="E-mail" name="email" value="{{ old('email') }}"/>
+                                <input type="text" class="form-control" placeholder="E-mail" name="email"
+                                       value="{{ old('email') }}"/>
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -44,7 +54,8 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                <input type="password" class="form-control" placeholder="password" name="password" id="password"/>
+                                <input type="password" class="form-control" placeholder="password" name="password"
+                                       id="password"/>
                             </div>
                             <!-- /.input group -->
                         </div>
