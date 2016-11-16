@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PHPReboot|@yield('title')</title>
+    <title>PHPReboot | @yield('title')</title>
     
     <!-- Favicon Icon -->
     <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
