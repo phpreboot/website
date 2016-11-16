@@ -12,5 +12,19 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.styles([
+        'bootstrap-3.3.6/bootstrap.min.css',
+        'font-awesome/font-awesome.min.css',
+        'ionicons/ionicons.min.css',
+        'adminLTE-2.3.4/AdminLTE.min.css',
+        'adminLTE-2.3.4/skins/skin-green.min.css',
+    ]).scripts([
+        'html5shiv/html5shiv.min.js',
+        'respond/respond.min.js',
+        'jQuery/jquery-2.2.3.min.js',
+        'jQuery/jquery-ui.min.js',
+        'bootstrap-3.3.6/bootstrap.min.js',
+        'adminLTE-2.3.4/app.min.js',
+    ])
+    mix.version(['css/all.css','js/all.js']);
 });
