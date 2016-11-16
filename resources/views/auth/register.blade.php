@@ -22,9 +22,8 @@
                 <div class="box-header">
                     <h3 class="box-title">Sign up</h3>
                 </div>
-                <form method="POST" action="/auth/register">
+                {!! Form::open(['action'=>'Auth\AuthController@postRegister']) !!}
                     <div class="box-body">
-                        {!! csrf_field() !!}
                         @if (count($errors) > 0)
                             @foreach ($errors->all() as $error)
                             <div class="alert alert-danger alert-dismissable">
@@ -35,47 +34,47 @@
                         @endif
                         <!-- name -->
                         <div class="form-group">
-                            <label>Name (Will be displayed):</label>
+                            {!! Form::label('name','Name (Will be displayed):') !!}
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-user"></i>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Name" name="name" value="{{ old('name') }}"/>
+                                {!! Form::text('name',null,['class'=>'form-control','placeholder'=>'Name']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
                         <!-- email -->
                         <div class="form-group">
-                            <label>Email:</label>
+                            {!! Form::label('email','Email:') !!}
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-at"></i>
                                 </div>
-                                <input type="text" class="form-control" placeholder="E-mail" name="email" value="{{ old('email') }}"/>
+                                {!! Form::email('email',null,['class'=>'form-control','placeholder'=>'E-mail']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
                         <!-- /.form group -->
                         <!-- password -->
                         <div class="form-group">
-                            <label>Password:</label>
+                            {!! Form::label('password','Password:') !!}
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                <input type="password" class="form-control" placeholder="password" name="password"/>
+                                {!! Form::password('password',['class'=>'form-control','placeholder'=>'password']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
                         <!-- /.form group -->
                         <!-- confirm password -->
                         <div class="form-group">
-                            <label>Confirm password:</label>
+                            {!! Form::label('password_confirmation','Confirm password:') !!}
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                <input type="password" class="form-control" placeholder="Confirm password" name="password_confirmation"/>
+                                {!! Form::password('password_confirmation',['class'=>'form-control','placeholder'=>'password']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -83,13 +82,13 @@
                     </div>
                     <div class="box-footer">
                         <div class="pull-left">
-                            Already having account? <a href="/auth/login">Sign in</a>.
+                            Already having account? <a href="{{url('/auth/login')}}">Sign in</a>.
                         </div>
                         <div class="pull-right">
-                            <button type="submit" class="btn btn-info">sign up</button>
+                            <button type="submit" class="btn btn-info">Sign up</button>
                         </div>
                     </div>
-                </form>
+                {!! Form::close() !!}
             </div>
         </div>
     </div>

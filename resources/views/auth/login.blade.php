@@ -22,9 +22,8 @@
                 <div class="box-header">
                     <h3 class="box-title">Sign in</h3>
                 </div>
-                <form method="POST" action="/auth/login">
+                    {!! Form::open(['action'=>'Auth\AuthController@postLogin']) !!}
                     <div class="box-body">
-                        {!! csrf_field() !!}
                         <!-- email -->
                         <div class="form-group">
                             <label>Email:</label>
@@ -32,7 +31,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-at"></i>
                                 </div>
-                                <input type="text" class="form-control" placeholder="E-mail" name="email" value="{{ old('email') }}"/>
+                                {!! Form::email('email',null,['class'=>'form-control','placeholder'=>'E-mail']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -44,7 +43,7 @@
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                <input type="password" class="form-control" placeholder="password" name="password" id="password"/>
+                                {!! Form::password('password',['id'=>'password','class'=>'form-control','placeholder'=>'password']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -53,7 +52,7 @@
                         <div class="form-group">
                             <div class="checkbox vertical text-danger">
                                 <label>
-                                    <input type="checkbox" name="remember"/>
+                                    {!! Form::checkbox('remember') !!}
                                     Remember me (Do not check if you are on public computer)
                                 </label>
                             </div>
@@ -68,7 +67,7 @@
                             <button type="submit" class="btn btn-info">sign in</button>
                         </div>
                     </div>
-                </form>
+                {!! Form::close() !!}
             </div>
         </div>
     </div>
