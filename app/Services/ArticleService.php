@@ -20,7 +20,7 @@ class ArticleService {
 
     public function getCategorizedArticlesByMagazine($magazineId)
     {
-        $articles = $this->articleRepo->findBy('magazine_id', $magazineId);
+        $articles = $this->articleRepo->findBy('magazine_id', $magazineId)->sortByDesc('created_at');
         $categories = [];
 
         foreach ($articles as $article) {
