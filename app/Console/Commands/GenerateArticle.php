@@ -138,9 +138,9 @@ class GenerateArticle extends Command
             $this->table($headers, $categories->toArray());
         }
         $categoryId = $this->ask("Enter category id");
-        
+
         $category = Category::find($categoryId);
-        
+
         return [
             "id" => $category->id,
             "name" => $category->name,
@@ -207,15 +207,13 @@ class GenerateArticle extends Command
     protected function collectAuthorInfo()
     {
         $enteredAuthorName = $this->ask("Enter author name?");
-        $enteredAuthorTwitter = $this->ask("Enter author's twitter handle (without '@').");
+        $enteredAuthorTwitter = null;
 
         $authorArray = [
             "name" => $enteredAuthorName
         ];
 
-        $author = Author::where('name', 'like', '%' . $enteredAuthorName . '%')
-                    ->orWhere('twitter', 'like', '%' . $enteredAuthorTwitter . '%')
-                    ->get();
+        $author = Author::where('name', 'like', '%' . $enteredAuthorName . '%')->get();
 
         if (count($author) > 0) {
             $this->line("We find this or similar author in the database. Please check if you mean any one of them:");
@@ -224,14 +222,19 @@ class GenerateArticle extends Command
 
             if ($this->confirm("Do you mean any of above author? [y|N]")) {
                 $authorId = $this->ask("Enter 'id' of author from above table.");
-                
+
                 $author = Author::find($authorId);
 
                 $authorArray['id'] = $author->id;
                 $authorArray['name'] = $author->name;
-                $authorArray['twitter'] = ($author->twitter == null || $author->twitter == '') ? $enteredAuthorTwitter : $author->twitter;
+                $authorArray['twitter'] = $author->twitter;
                 return $authorArray;
             }
+        }
+
+        if (!isset($authorArray['id'])) {
+            $enteredAuthorTwitter = $this->ask("Enter author's twitter handle (without '@').", false);
+            $enteredAuthorTwitter = $enteredAuthorTwitter == false ? null : $enteredAuthorTwitter;
         }
 
         $authorArray['name'] = $enteredAuthorName;
