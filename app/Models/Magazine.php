@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Magazine extends Model
 {
+
     /**
      * Get the articles for the magazine issue.
      */

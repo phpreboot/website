@@ -39,15 +39,12 @@ class GenerateArticle extends Command
     protected $jsonEncodedUserInput;
 
     /**
-     * @var Illuminate\Filesystem\Filesystem
+     * Variable to store filesystem object
+     *
+     * @var Filesystem
      */
     protected $files;
 
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
     public function __construct(Filesystem $files)
     {
         parent::__construct();
@@ -56,15 +53,13 @@ class GenerateArticle extends Command
         $this->files = $files;
     }
 
-    /**
-     * Execute the console command.
-     *
-     * @return mixed
-     */
     public function handle()
     {
-        $this->collectUserInput();
+        if (!$this->collectUserInput()) {
+            return false;
+        }
         $this->writeFile();
+        return true;
     }
 
     protected function writeFile()
@@ -77,9 +72,12 @@ class GenerateArticle extends Command
         $this->files->put($path, $this->jsonEncodedUserInput);
     }
 
+    /**
+     * @param string $path
+     */
     protected function makeDirectory($path)
     {
-        if (! $this->files->isDirectory(dirname($path))) {
+        if (!$this->files->isDirectory(dirname($path))) {
             $this->info("Folder '" . dirname($path) . "'' not exists. Creating.");
 
             $this->files->makeDirectory(dirname($path), 0777, true, true);
@@ -102,7 +100,7 @@ class GenerateArticle extends Command
             $this->line("Thanks for correct answer.");
             $this->error("Although we can't go further with outdated database, updating database is very simple.");
             $this->line("Please visit 'Set project locally' section of http://github.com/phpreboot/website for information about updating database.");
-            exit();
+            return false;
         }
 
         $this->userInput['author'] = $this->collectAuthorInfo();
@@ -110,6 +108,7 @@ class GenerateArticle extends Command
         $this->userInput['category'] = $this->collectCategoryInfo();
         $this->collectArticleInfo();
         $this->encodeUserInput();
+        return true;
     }
 
     protected function encodeUserInput()
@@ -150,8 +149,6 @@ class GenerateArticle extends Command
 
     protected function collectWebsiteInfo()
     {
-        $websiteArray = [];
-
         $this->line("Let's first check if website is available in database or not.");
         $websiteDomain = $this->ask("Enter website (without http(s), www or /. Just domain and tld like 'phpreboot.com'.");
 
@@ -164,13 +161,18 @@ class GenerateArticle extends Command
         }
     }
 
+    /**
+     * @param string $websiteDomain
+     *
+     * @return string
+     */
     protected function getNewWebsite($websiteDomain)
     {
         $websiteArray = [];
         $websiteArray['name'] = $this->ask("What is suitable name of the website. (Ideally name should uniquely identify website.)");
         $websiteArray['site_url'] = $websiteDomain;
 
-        if($this->confirm("It there and RSS feed of the website? (And you know that) y|N")) {
+        if ($this->confirm("Is there and RSS feed of the website? (And you know that) y|N")) {
             $websiteArray['feed_url'] = $this->ask("Enter feed_url.");
         } else {
             $websiteArray['feed_url'] = "";
@@ -179,6 +181,12 @@ class GenerateArticle extends Command
         return $websiteArray;
     }
 
+    /**
+     * @param object $websites
+     * @param string $websiteDomain
+     *
+     * @return string
+     */
     protected function getExistingWebsite($websites, $websiteDomain)
     {
         $websiteArray = [];

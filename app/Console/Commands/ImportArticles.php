@@ -56,22 +56,22 @@ class ImportArticles extends Command
     protected $json;
 
     /**
-     * @var App\Models\Author
+     * @var Author
      */
     protected $author;
 
     /**
-     * @var App\Models\Website
+     * @var Website
      */
     protected $website;
 
     /**
-     * @var App\Models\Category
+     * @var Category
      */
     protected $category;
 
     /**
-     * @var App\Models\Magazine
+     * @var Magazine
      */
     protected $magazine;
 
@@ -101,19 +101,37 @@ class ImportArticles extends Command
     /**
      * Execute the console command.
      *
-     * @return mixed
+     * @return boolean
      */
     public function handle()
     {
         $fileName = $this->argument('fileName');
 
-        $this->validateFileName($fileName);
-        $this->importFile();
-        $this->importAuthor();
-        $this->importWebsite();
-        $this->importCategory();
-        $this->importMagazine();
+        if (!$this->validateFileName($fileName)) {
+            return false;
+        }
+
+        if (!$this->importFile()) {
+            return false;
+        }
+
+        if (!$this->importAuthor()) {
+            return false;
+        }
+
+        if (!$this->importWebsite()) {
+            return false;
+        }
+
+        if (!$this->importCategory()) {
+            return false;
+        }
+
+        if (!$this->importMagazine()) {
+            return false;
+        }
         $this->importArticle();
+        return true;
     }
 
     protected function importArticle()
@@ -131,7 +149,7 @@ class ImportArticles extends Command
         $article->description = $this->json['description'];
         $article->json_file_name = $this->json['json_file_name'];
 
-            $this->author->save();
+        $this->author->save();
         $this->category->save();
         $this->website->save();
 
@@ -153,27 +171,27 @@ class ImportArticles extends Command
         }
 
         // Publish_at format must be yyyy-mm-dd. Lets break & validate.
-        $publishDateArray = explode('-' , $this->json['published_at']);
+        $publishDateArray = explode('-', $this->json['published_at']);
 
         if (count($publishDateArray) != 3) {
             $this->error("publish_at key is not valid.");
-            exit();
+            return false;
         }
 
         // Make two digit year, as needed in magazine table.
-        $year = (int)($publishDateArray[0]);
+        $year = (int) ($publishDateArray[0]);
         $twoDigitYear = ($year > 2000) ? ($year - 2000) : $year;
 
-        if ($year < self::MIN_YEAR || $year > self::MAX_YEAR) {
+        if (!$this->validateYear($year)) {
             $this->error("Article published outside allowed publication period.");
-            exit();
+            return false;
         }
 
-        $month = (int)($publishDateArray[1]);
+        $month = (int) ($publishDateArray[1]);
 
         if ($month < 1 || $month > 12) {
             $this->error("Month under key 'published_at' is not correct.");
-            exit();
+            return false;
         }
 
         $longMonths = [
@@ -209,7 +227,7 @@ class ImportArticles extends Command
         $name = $longMonths[$month - 1] . ' ' . $year;
         $shortName = $shortMonth[$month - 1] . $twoDigitYear;
 
-        $magazine = Magazine::where('short_name' , $shortName)->first();
+        $magazine = Magazine::where('short_name', $shortName)->first();
 
         if ($magazine == null) {
             $this->info("Magazine do not exist, creating new.");
@@ -224,6 +242,7 @@ class ImportArticles extends Command
         }
 
         $this->magazine = $magazine;
+        return true;
     }
 
     protected function importCategory()
@@ -239,27 +258,27 @@ class ImportArticles extends Command
                 $category = Category::findOrFail($this->json['category']['id']);
             } catch (ModelNotFoundException $e) {
                 $this->error("No category with id '" . $this->json['category']['id'] . "' exist. Exiting.");
-                exit();
+                return false;
             }
 
             // Validate input author name is same as in database.
             if ($category->name == $this->json['category']['name']) {
                 $this->category = $category;
-                return;
+                return true;
             }
 
             // ToDo: Author name is different. Give edit/continue/stop choice to user.
-            // Current default: continue.
             $this->category = $category;
-            return;
+            return true;
         }
 
         // Author not set, lets create new author.
 
-        $this->category = new category();
+        $this->category = new Category();
         $this->category->name = $this->json['category']['name'];
 
         // Not saving category right now. Lets first validate other things, and save everything at once.
+        return true;
     }
 
     protected function importWebsite()
@@ -275,7 +294,7 @@ class ImportArticles extends Command
                 $website = Website::findOrFail($this->json['website']['id']);
             } catch (ModelNotFoundException $e) {
                 $this->error("No website with id '" . $this->json['website']['id'] . "' exist. Exiting.");
-                exit();
+                return false;
             }
 
             // Validate input website is same
@@ -285,13 +304,12 @@ class ImportArticles extends Command
                 && $website->feed_url == $this->json['website']['feed_url']
             ) {
                 $this->website = $website;
-                return;
+                return true;
             }
 
             // ToDo: Author name/site_url/feed_url is different. Give edit/continue/stop choice to user.
-            // Current default: continue.
             $this->website = $website;
-            return;
+            return true;
         }
 
         $this->website = new Website();
@@ -300,6 +318,7 @@ class ImportArticles extends Command
         $this->website->feed_url = $this->json['website']['feed_url'];
 
         // Not saving website right now. Lets first validate other things, and save everything at once.
+        return true;
     }
 
     protected function importAuthor()
@@ -315,7 +334,7 @@ class ImportArticles extends Command
                 $author = Author::findOrFail($this->json['author']['id']);
             } catch (ModelNotFoundException $e) {
                 $this->error("No author with id '" . $this->json['author']['id'] . "' exist. Exiting.");
-                exit();
+                return false;
             }
 
             // Validate input author name is same as in database.
@@ -328,13 +347,12 @@ class ImportArticles extends Command
                 }
 
                 $this->author = $author;
-                return;
+                return true;
             }
 
             // ToDo: Author name is different. Give edit/continue/stop choice to user.
-            // Current default: continue.
             $this->author = $author;
-            return;
+            return true;
         }
 
         // Author not set, lets create new author.
@@ -349,6 +367,7 @@ class ImportArticles extends Command
                 : null;
 
         // Not saving author right now. Lets first validate other things, and save everything at once.
+        return true;
     }
 
     protected function importFile()
@@ -361,7 +380,7 @@ class ImportArticles extends Command
 
         $this->json = json_decode($json, true);
 
-        $this->validateJson();
+        return $this->validateJson();
     }
 
     /**
@@ -376,19 +395,19 @@ class ImportArticles extends Command
         // Check if file contains valid JSON.
         if (!is_array($this->json)) {
             $this->error("File do not contain valid JSON format.");
-            exit();
+            return false;
         }
 
         // Check author exist
         if (!isset($this->json['author'])) {
             $this->error("Error: File do not have mandatory 'author' key.");
-            exit;
+            return false;
         }
 
         // Check author name is present
         if (!isset($this->json['author']['name'])) {
             $this->error("Error: File do not have mandatory 'name' key, under 'author' key.");
-            exit;
+            return false;
         }
 
         // In issue 76, we added twitter.
@@ -398,69 +417,65 @@ class ImportArticles extends Command
         // Check Website exist
         if (!isset($this->json['website'])) {
             $this->error("Error: File do not have mandatory 'website' key.");
-            exit;
+            return false;
         }
 
         // Check Website name is present
         if (!isset($this->json['website']['name'])) {
             $this->error("Error: File do not have mandatory 'name' key, under 'website' key.");
-            exit;
+            return false;
         }
 
         // Check Website site_url is present
         if (!isset($this->json['website']['site_url'])) {
             $this->error("Error: File do not have mandatory 'site_url' key, under 'website' key.");
-            exit;
+            return false;
         }
 
         // Check Website name is present
         if (!isset($this->json['website']['feed_url'])) {
             $this->error("Error: File do not have mandatory 'feed_url' key, under 'website' key.");
-            exit;
+            return false;
         }
 
         // Check author exist
         if (!isset($this->json['category'])) {
             $this->error("Error: File do not have mandatory 'category' key.");
-            exit;
+            return false;
         }
 
         // Check author name is present
         if (!isset($this->json['category']['name'])) {
             $this->error("Error: File do not have mandatory 'name' key, under 'category' key.");
-            exit;
+            return false;
         }
 
         // Check author exist
         if (!isset($this->json['url'])) {
             $this->error("Error: File do not have mandatory 'url' key.");
-            exit;
+            return false;
         }
 
         // Check author exist
         if (!isset($this->json['title'])) {
             $this->error("Error: File do not have mandatory 'title' key.");
-            exit;
+            return false;
         }
 
         // Check author exist
         if (!isset($this->json['published_at'])) {
             $this->error("Error: File do not have mandatory 'published_at' key.");
-            exit;
+            return false;
         }
 
         // Check author exist
         if (!isset($this->json['description'])) {
             $this->error("Error: File do not have mandatory 'description' key.");
-            exit;
+            return false;
         }
+        return true;
     }
 
-    /**
-     * Check input file name is valid.
-     *
-     * @param $fileName
-     */
     protected function validateFileName($fileName)
     {
         if ($this->shout >= self::SHOUT_INFO) {
@@ -472,29 +487,29 @@ class ImportArticles extends Command
         if (count($input) != 2) {
             $this->error("Error: Incorrect file name.");
             $this->error("Correct format: 'yyyymm-x'.");
-            exit();
+            return false;
         }
 
-        $this->folder = (int)$input[0];
-        $this->file = (int)$input[1];
+        $this->folder = (int) $input[0];
+        $this->file = (int) $input[1];
 
-        $year = (int)($this->folder / 100);
+        $year = (int) ($this->folder / 100);
 
-        if ($year < self::MIN_YEAR || $year > self::MAX_YEAR) {
+        if (!$this->validateYear($year)) {
             $this->error("Year is not correct.");
-            exit();
+            return false;
         }
 
         $month = $this->folder - ($year * 100);
 
         if ($month < 1 || $month > 12) {
             $this->error("Month is not correct.");
-            exit();
+            return false;
         }
 
         //ToDo: Invalidate future months. Example, during August 16, articles should not be added for September 16.
 
-        $this->validateFileExists();
+        return $this->validateFileExists();
     }
 
     /**
@@ -508,7 +523,17 @@ class ImportArticles extends Command
 
         if (!file_exists($this->path)) {
             $this->error("File '$this->path' does not exist.");
-            exit();
+            return false;
         }
+        return true;
+    }
+
+    /**
+     * @param integer $year
+     * @return boolean
+     */
+    protected function validateYear($year)
+    {
+        return $year < self::MIN_YEAR || $year > self::MAX_YEAR ? false : true;
     }
 }
