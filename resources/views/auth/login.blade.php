@@ -22,29 +22,37 @@
                 <div class="box-header">
                     <h3 class="box-title">Sign in</h3>
                 </div>
-                <form method="POST" action="/auth/login">
+                    {!! Form::open(['action'=>'Auth\AuthController@postLogin']) !!}
                     <div class="box-body">
-                        {!! csrf_field() !!}
+                        @if (count($errors) > 0)
+                            @foreach ($errors->all() as $error)
+                                <div class="alert alert-danger alert-dismissable">
+                                    <button type="button" class="close" data-dismiss="alert"
+                                            aria-hidden="true">&times;</button>
+                                    <i class="icon fa fa-ban"></i>{{ $error }}
+                                </div>
+                            @endforeach
+                        @endif
                         <!-- email -->
                         <div class="form-group">
-                            <label>Email:</label>
+                            {!! Form::label('email','Email:') !!}
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-at"></i>
                                 </div>
-                                <input type="text" class="form-control" placeholder="E-mail" name="email" value="{{ old('email') }}"/>
+                                {!! Form::email('email',null,['class'=>'form-control','placeholder'=>'E-mail']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
                         <!-- /.form group -->
                         <!-- password -->
                         <div class="form-group">
-                            <label>Password:</label>
+                            {!! Form::label('password','Password:') !!}
                             <div class="input-group">
                                 <div class="input-group-addon">
                                     <i class="fa fa-asterisk"></i>
                                 </div>
-                                <input type="password" class="form-control" placeholder="password" name="password" id="password"/>
+                                {!! Form::password('password',['id'=>'password','class'=>'form-control','placeholder'=>'password']) !!}
                             </div>
                             <!-- /.input group -->
                         </div>
@@ -53,7 +61,7 @@
                         <div class="form-group">
                             <div class="checkbox vertical text-danger">
                                 <label>
-                                    <input type="checkbox" name="remember"/>
+                                    {!! Form::checkbox('remember') !!}
                                     Remember me (Do not check if you are on public computer)
                                 </label>
                             </div>
@@ -62,13 +70,13 @@
                     </div>
                     <div class="box-footer">
                         <div class="pull-left">
-                            Not having account? <a href="/auth/register">Sign up</a>.
+                            Not having account? <a href="{{url('/auth/register')}}">Sign up</a>.
                         </div>
                         <div class="pull-right">
-                            <button type="submit" class="btn btn-info">sign in</button>
+                            <button type="submit" class="btn btn-info">Sign in</button>
                         </div>
                     </div>
-                </form>
+                {!! Form::close() !!}
             </div>
         </div>
     </div>
