@@ -44,6 +44,10 @@ class ArticleService {
         // For now, simply sorting categories alphabetically.
         ksort($categories);
 
+        foreach ($categories as $index => $category) {
+            $categories[$index] = collect($category)->sortByDesc('created_at');
+        }
+        
         return $categories;
     }
 
