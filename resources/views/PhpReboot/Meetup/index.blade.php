@@ -34,14 +34,14 @@
                     <div class="pad">
                         <div class="row">
                             <div class="col-sm-12 text-justify">
-                                PHP reboot started as PHP developers group in Pune, India. We conduct frequent meet-ups, where developers gather for knowledge sharing sessions.<br/><br/>
-                                Every meet-up have a speaker, who presents the topic followed by round of questions and answers. After presentation, we raffle out items sponsored by our sponsors. Our regular sponsors are:<br/><br/>
+                                PHP reboot started as a group for PHP developers in Pune, India. We conduct frequent meet-ups, where developers gather for knowledge sharing sessions.<br/><br/>
+                                Every meet-up has a speaker, who presents the topic followed by a round of questions and answers. After presentation, we raffle out items sponsored by our sponsors. Our regular sponsors are:<br/><br/>
                                 <ul>
                                     <li><strong>Jet Brains:</strong> Sponsor PHP Storm license. PHP Reboot community gets one free license every month.</li>
                                     <li><strong>Ansh Systems:</strong> Snacks and place/equipments to host meet-up.</li>
                                 </ul>
                                 <br/>
-                                Before we finish the meet-up, we have good networking time over snacks, where everyone has a chance to interact with each other on whatever topic they prefer. Speakers of the event and many other senior developers are part of this discussions and available to help/guide anyone, who approaches them.
+                                Before we finish the meet-up, we have good networking time over snacks, where everyone has a chance to interact with each other on whatever topic they prefer. Speakers of the event and many other senior developers are part of these discussions and are available to help or guide anyone who approaches them.
                             </div>
                         </div>
                     </div>
