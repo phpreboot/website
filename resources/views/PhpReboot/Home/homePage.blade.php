@@ -10,7 +10,7 @@
             <div class="box box-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-aqua-gradient">
-                    <h3 class="widget-user-username">Meet ups</h3>
+                    <h3 class="widget-user-username">Meetups</h3>
                     <h5 class="widget-user-desc">meetup.com</h5>
                     <div class="phpricon">
                         <i class="fa fa-users"></i>
@@ -64,7 +64,7 @@
             <div class="box box-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-orange-active">
-                    <h3 class="widget-user-username">PHP Conference</h3>
+                    <h3 class="widget-user-username">PHP-Conference</h3>
                     <h5 class="widget-user-desc">To be announced</h5>
                     <div class="phpricon">
                         <i class="fa fa-microphone"></i>
@@ -175,7 +175,7 @@
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer">
-                    Should we add others in list? Please suggest on twitter.
+                    Should we add others in list? Please suggest them to us on twitter.
                 </div>
             </div>
             <!-- /.box -->
