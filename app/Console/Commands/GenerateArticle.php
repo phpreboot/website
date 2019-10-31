@@ -133,7 +133,7 @@ class GenerateArticle extends Command
         $this->line("We do not allow adding new category as that has to be done by admin.");
         $this->line("Next we need to enter category id.");
         if ($this->confirm("Do you want to show categories? [y|N]")) {
-            $categories = Category::all(["id", "name", "description"]);
+            $categories = Category::all(["id", "name", "description"])->orderBy("name");
             $headers = [["id", "name", "description"]];
             $this->table($headers, $categories->toArray());
         }
