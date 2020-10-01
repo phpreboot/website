@@ -35,7 +35,7 @@ PHP is not just a language but a complete technology stach to provide Web soluti
 
 To make thing worse, technology changes rapidly. How to keep ourself updated?
 
-### Solution
+### best solution :points
 
 One of the solutions is `Learn from other's experience and mistakes`.
 
@@ -53,7 +53,7 @@ PHP Reboot magazine is not ideally a magazine as we do not write. However **we s
 
 Following individual blogs becomes difficult for many. Thus, PHP reboot magazine is just collecting blogs/tutorials, group them in category so that other have easy and central place to read. Although we must follow all categories but if someone is out of time (don't know how to manage time) and **want to follow just few categories, we have categories**.
 
-### Contribution
+### Contribution 
 
 PHP reboot magazine is a community magazine for developers;
 - Written by developers (personal blog/tutorials),
